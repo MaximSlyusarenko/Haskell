@@ -1,0 +1,1719 @@
+
+==================== FINAL INTERFACE ====================
+2016-10-03 10:44:51.97187 UTC
+
+interface main@main:SecondHW 8001
+  interface hash: 629a907e7ddba44dcf016604399c4555
+  ABI hash: f1fefca095c23f18634c145265b5cfe5
+  export-list hash: ffd45380ee733eb60d03aad234e3dcb1
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 716b4167d6f726e8f7ec16c762304dd6
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  SecondHW.delete
+  SecondHW.deleteMax
+  SecondHW.deleteMin
+  SecondHW.fightRound
+  SecondHW.find
+  SecondHW.findMax
+  SecondHW.findMin
+  SecondHW.fromList
+  SecondHW.fromListDecart
+  SecondHW.fromListDecartWithCurTree
+  SecondHW.getSize
+  SecondHW.getSizeForParent
+  SecondHW.gloriousBattle
+  SecondHW.gloriousBattleWithLevelCounter
+  SecondHW.insert
+  SecondHW.insertDecart
+  SecondHW.maraudAttackEquipment
+  SecondHW.maraudDefenceEquipment
+  SecondHW.maraudHealthPotion
+  SecondHW.maraudMonster
+  SecondHW.merge
+  SecondHW.monsterTurn
+  SecondHW.monstersSample
+  SecondHW.playerTurn
+  SecondHW.removeDecart
+  SecondHW.rmqDecart
+  SecondHW.safeInit
+  SecondHW.safeTail
+  SecondHW.split
+  SecondHW.startPlayer
+  SecondHW.strip
+  SecondHW.toList
+  SecondHW.Equipment{SecondHW.Attack SecondHW.Defence SecondHW.HealthPotion SecondHW.NoEquipment}
+  SecondHW.Monster{SecondHW.DeadMonster SecondHW.Monster}
+  SecondHW.Player{SecondHW.DeadPlayer SecondHW.Player}
+  SecondHW.Result{SecondHW.Cicle SecondHW.Result}
+  SecondHW.Unit{SecondHW.getAttack SecondHW.getDefence SecondHW.getEquipmentAttack SecondHW.getEquipmentAttackInt SecondHW.getEquipmentDefence SecondHW.getEquipmentDefenceInt SecondHW.getFullAttack SecondHW.getFullDefence SecondHW.getHealth SecondHW.getHealthPotion SecondHW.hasHealthPotion SecondHW.healthEquals}
+module dependencies: TreePrinters
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:Data.Either bd9f099b82d4ed2d98c56d7144ac6957
+import  -/  base-4.9.0.0:Data.Tuple acb0ed10307ed88df6c81b8589f4de16
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.Num 48f506a8f4ecf06285d0a0706594dcc0
+import  -/  base-4.9.0.0:GHC.Show 952347a6ab730bcb25c0854d8bc6ca51
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  TreePrinters bfcb2321e377a34de832e798056ac0bd
+  exports: 4685953fbb6e299dfed767d6c15ac578
+  Leaf ebf254969d5b87047bd6032946499ce1
+  Node 716913473e39c1ba41b651d210984b6c
+  Tree 753f5a9dea2cfa7504c41db234ea95a2
+aa3355d5b48e97ee95820d0771eded8b
+  $fShowEquipment :: GHC.Show.Show SecondHW.Equipment
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ SecondHW.Equipment
+                  SecondHW.$fShowEquipment_$cshowsPrec
+                  SecondHW.$fShowEquipment_$cshow
+                  SecondHW.$fShowEquipment_$cshowList -}
+aa3355d5b48e97ee95820d0771eded8b
+  $fShowEquipment1 :: SecondHW.Equipment -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (SecondHW.$fShowEquipment_$cshowsPrec
+                   SecondHW.$fShowEquipment2) -}
+113f1a7a9184bdb51a68d5d564bc64c6
+  $fShowEquipment2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+7120dafa5ecf2041b93b4ac4de10316b
+  $fShowEquipment3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "NoEquipment"#) -}
+1c0cfb722d0bbdcfd6a86ea81bcc91ea
+  $fShowEquipment4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "HealthPotion"#) -}
+4f289cf8707e7169a66f87860f3a0e05
+  $fShowEquipment5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Defence "#) -}
+2f714c9195d2ccadca2c3c57110c8ece
+  $fShowEquipment6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Attack "#) -}
+aa3355d5b48e97ee95820d0771eded8b
+  $fShowEquipment_$cshow :: SecondHW.Equipment -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: SecondHW.Equipment) ->
+                 case x of wild {
+                   SecondHW.Attack b1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        SecondHW.$fShowEquipment6
+                        (case b1 of ww2 { GHC.Types.I# ww3 ->
+                         case GHC.Show.$wshowSignedInt
+                                11#
+                                ww3
+                                (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                         GHC.Types.: @ GHC.Types.Char ww5 ww6 } })
+                   SecondHW.Defence b1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        SecondHW.$fShowEquipment5
+                        (case b1 of ww2 { GHC.Types.I# ww3 ->
+                         case GHC.Show.$wshowSignedInt
+                                11#
+                                ww3
+                                (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                         GHC.Types.: @ GHC.Types.Char ww5 ww6 } })
+                   SecondHW.HealthPotion -> SecondHW.$fShowEquipment4
+                   SecondHW.NoEquipment -> SecondHW.$fShowEquipment3 }) -}
+aa3355d5b48e97ee95820d0771eded8b
+  $fShowEquipment_$cshowList ::
+    [SecondHW.Equipment] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ SecondHW.Equipment
+                   SecondHW.$fShowEquipment1) -}
+aa3355d5b48e97ee95820d0771eded8b
+  $fShowEquipment_$cshowsPrec ::
+    GHC.Types.Int -> SecondHW.Equipment -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U>,
+     Unfolding: (\ (a :: GHC.Types.Int)
+                   (ds :: SecondHW.Equipment)
+                   (eta :: GHC.Base.String) ->
+                 case ds of wild {
+                   SecondHW.Attack b1
+                   -> case a of wild1 { GHC.Types.I# x ->
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# x 11#) of wild2 {
+                        GHC.Types.False
+                        -> GHC.Base.++
+                             @ GHC.Types.Char
+                             SecondHW.$fShowEquipment6
+                             (case b1 of ww2 { GHC.Types.I# ww3 ->
+                              case GHC.Show.$wshowSignedInt 11# ww3 eta of ww4 { (#,#) ww5 ww6 ->
+                              GHC.Types.: @ GHC.Types.Char ww5 ww6 } })
+                        GHC.Types.True
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows9
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                SecondHW.$fShowEquipment6
+                                (case b1 of ww2 { GHC.Types.I# ww3 ->
+                                 case GHC.Show.$wshowSignedInt
+                                        11#
+                                        ww3
+                                        (GHC.Types.:
+                                           @ GHC.Types.Char
+                                           GHC.Show.shows6
+                                           eta) of ww4 { (#,#) ww5 ww6 ->
+                                 GHC.Types.: @ GHC.Types.Char ww5 ww6 } })) } }
+                   SecondHW.Defence b1
+                   -> case a of wild1 { GHC.Types.I# x ->
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# x 11#) of wild2 {
+                        GHC.Types.False
+                        -> GHC.Base.++
+                             @ GHC.Types.Char
+                             SecondHW.$fShowEquipment5
+                             (case b1 of ww2 { GHC.Types.I# ww3 ->
+                              case GHC.Show.$wshowSignedInt 11# ww3 eta of ww4 { (#,#) ww5 ww6 ->
+                              GHC.Types.: @ GHC.Types.Char ww5 ww6 } })
+                        GHC.Types.True
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows9
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                SecondHW.$fShowEquipment5
+                                (case b1 of ww2 { GHC.Types.I# ww3 ->
+                                 case GHC.Show.$wshowSignedInt
+                                        11#
+                                        ww3
+                                        (GHC.Types.:
+                                           @ GHC.Types.Char
+                                           GHC.Show.shows6
+                                           eta) of ww4 { (#,#) ww5 ww6 ->
+                                 GHC.Types.: @ GHC.Types.Char ww5 ww6 } })) } }
+                   SecondHW.HealthPotion
+                   -> GHC.Base.++ @ GHC.Types.Char SecondHW.$fShowEquipment4 eta
+                   SecondHW.NoEquipment
+                   -> GHC.Base.++ @ GHC.Types.Char SecondHW.$fShowEquipment3 eta }) -}
+4991e3093504971c7a1cf930bc9a0d9a
+  $fShowMonster :: GHC.Show.Show SecondHW.Monster
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ SecondHW.Monster
+                  SecondHW.$fShowMonster_$cshowsPrec
+                  SecondHW.$fShowMonster_$cshow
+                  SecondHW.$fShowMonster_$cshowList -}
+4991e3093504971c7a1cf930bc9a0d9a
+  $fShowMonster1 :: SecondHW.Monster -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (SecondHW.$fShowMonster_$cshowsPrec
+                   SecondHW.$fShowEquipment2) -}
+31226aca20bbe24b29c2c404b84a6e4a
+  $fShowMonster2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "DeadMonster"#) -}
+801aa06fbf6bd3e4f024ef85441c1289
+  $fShowMonster3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 11#) -}
+018eb78c21746e58f2815e7b6fcfc928
+  $fShowMonster4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Monster "#) -}
+4991e3093504971c7a1cf930bc9a0d9a
+  $fShowMonster_$cshow :: SecondHW.Monster -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: SecondHW.Monster) ->
+                 SecondHW.$fShowMonster_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+4991e3093504971c7a1cf930bc9a0d9a
+  $fShowMonster_$cshowList :: [SecondHW.Monster] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ SecondHW.Monster
+                   SecondHW.$fShowMonster1) -}
+4991e3093504971c7a1cf930bc9a0d9a
+  $fShowMonster_$cshowsPrec ::
+    GHC.Types.Int -> SecondHW.Monster -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U>,
+     Unfolding: (\ (a :: GHC.Types.Int)
+                   (ds :: SecondHW.Monster)
+                   (eta :: GHC.Base.String) ->
+                 case ds of wild {
+                   SecondHW.Monster b1 b2 b3 b4 b5 b6
+                   -> case a of wild1 { GHC.Types.I# x ->
+                      let {
+                        p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x1 :: GHC.Base.String)[OneShot] ->
+                          GHC.Base.++
+                            @ GHC.Types.Char
+                            SecondHW.$fShowMonster4
+                            (case b1 of ww2 { GHC.Types.I# ww3 ->
+                             case GHC.Show.$wshowSignedInt
+                                    11#
+                                    ww3
+                                    (GHC.Types.:
+                                       @ GHC.Types.Char
+                                       GHC.Show.showSpace1
+                                       (case b2 of ww1 { GHC.Types.I# ww5 ->
+                                        case GHC.Show.$wshowSignedInt
+                                               11#
+                                               ww5
+                                               (GHC.Types.:
+                                                  @ GHC.Types.Char
+                                                  GHC.Show.showSpace1
+                                                  (case b3 of ww6 { GHC.Types.I# ww7 ->
+                                                   case GHC.Show.$wshowSignedInt
+                                                          11#
+                                                          ww7
+                                                          (GHC.Types.:
+                                                             @ GHC.Types.Char
+                                                             GHC.Show.showSpace1
+                                                             (SecondHW.$fShowEquipment_$cshowsPrec
+                                                                SecondHW.$fShowMonster3
+                                                                b4
+                                                                (GHC.Types.:
+                                                                   @ GHC.Types.Char
+                                                                   GHC.Show.showSpace1
+                                                                   (SecondHW.$fShowEquipment_$cshowsPrec
+                                                                      SecondHW.$fShowMonster3
+                                                                      b5
+                                                                      (GHC.Types.:
+                                                                         @ GHC.Types.Char
+                                                                         GHC.Show.showSpace1
+                                                                         (SecondHW.$fShowEquipment_$cshowsPrec
+                                                                            SecondHW.$fShowMonster3
+                                                                            b6
+                                                                            x1)))))) of ww4 { (#,#) ww8 ww9 ->
+                                                   GHC.Types.:
+                                                     @ GHC.Types.Char
+                                                     ww8
+                                                     ww9 } })) of ww4 { (#,#) ww6 ww7 ->
+                                        GHC.Types.:
+                                          @ GHC.Types.Char
+                                          ww6
+                                          ww7 } })) of ww4 { (#,#) ww5 ww6 ->
+                             GHC.Types.: @ GHC.Types.Char ww5 ww6 } })
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# x 11#) of wild2 {
+                        GHC.Types.False -> p eta
+                        GHC.Types.True
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows9
+                             (p (GHC.Types.: @ GHC.Types.Char GHC.Show.shows6 eta)) } }
+                   SecondHW.DeadMonster
+                   -> GHC.Base.++ @ GHC.Types.Char SecondHW.$fShowMonster2 eta }) -}
+795e6268bf7ad53ad90c9106a9b116a7
+  $fShowPlayer :: GHC.Show.Show SecondHW.Player
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ SecondHW.Player
+                  SecondHW.$fShowPlayer_$cshowsPrec
+                  SecondHW.$fShowPlayer_$cshow
+                  SecondHW.$fShowPlayer_$cshowList -}
+795e6268bf7ad53ad90c9106a9b116a7
+  $fShowPlayer1 :: SecondHW.Player -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (SecondHW.$fShowPlayer_$cshowsPrec
+                   SecondHW.$fShowEquipment2) -}
+f7fbac7e2c6f4f827e7a3ea0a98a80dd
+  $fShowPlayer2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "DeadPlayer"#) -}
+8f5a7f476184b50ceeb73321eff0fa34
+  $fShowPlayer3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Player "#) -}
+795e6268bf7ad53ad90c9106a9b116a7
+  $fShowPlayer_$cshow :: SecondHW.Player -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: SecondHW.Player) ->
+                 SecondHW.$fShowPlayer_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+795e6268bf7ad53ad90c9106a9b116a7
+  $fShowPlayer_$cshowList :: [SecondHW.Player] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ SecondHW.Player
+                   SecondHW.$fShowPlayer1) -}
+795e6268bf7ad53ad90c9106a9b116a7
+  $fShowPlayer_$cshowsPrec ::
+    GHC.Types.Int -> SecondHW.Player -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U>,
+     Unfolding: (\ (a :: GHC.Types.Int)
+                   (ds :: SecondHW.Player)
+                   (eta :: GHC.Base.String) ->
+                 case ds of wild {
+                   SecondHW.Player b1 b2 b3 b4 b5
+                   -> case a of wild1 { GHC.Types.I# x ->
+                      let {
+                        g :: GHC.Base.String -> GHC.Base.String
+                          {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x1 :: GHC.Base.String)[OneShot] ->
+                          case b1 of ww2 { GHC.Types.I# ww3 ->
+                          case GHC.Show.$wshowSignedInt
+                                 11#
+                                 ww3
+                                 (GHC.Types.:
+                                    @ GHC.Types.Char
+                                    GHC.Show.showSpace1
+                                    (case b2 of ww1 { GHC.Types.I# ww5 ->
+                                     case GHC.Show.$wshowSignedInt
+                                            11#
+                                            ww5
+                                            (GHC.Types.:
+                                               @ GHC.Types.Char
+                                               GHC.Show.showSpace1
+                                               (case b3 of ww6 { GHC.Types.I# ww7 ->
+                                                case GHC.Show.$wshowSignedInt
+                                                       11#
+                                                       ww7
+                                                       (GHC.Types.:
+                                                          @ GHC.Types.Char
+                                                          GHC.Show.showSpace1
+                                                          (SecondHW.$fShowEquipment_$cshowsPrec
+                                                             SecondHW.$fShowMonster3
+                                                             b4
+                                                             (GHC.Types.:
+                                                                @ GHC.Types.Char
+                                                                GHC.Show.showSpace1
+                                                                (SecondHW.$fShowEquipment_$cshowsPrec
+                                                                   SecondHW.$fShowMonster3
+                                                                   b5
+                                                                   x1)))) of ww4 { (#,#) ww8 ww9 ->
+                                                GHC.Types.:
+                                                  @ GHC.Types.Char
+                                                  ww8
+                                                  ww9 } })) of ww4 { (#,#) ww6 ww7 ->
+                                     GHC.Types.:
+                                       @ GHC.Types.Char
+                                       ww6
+                                       ww7 } })) of ww4 { (#,#) ww5 ww6 ->
+                          GHC.Types.: @ GHC.Types.Char ww5 ww6 } }
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# x 11#) of wild2 {
+                        GHC.Types.False
+                        -> GHC.Base.++ @ GHC.Types.Char SecondHW.$fShowPlayer3 (g eta)
+                        GHC.Types.True
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows9
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                SecondHW.$fShowPlayer3
+                                (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows6 eta))) } }
+                   SecondHW.DeadPlayer
+                   -> GHC.Base.++ @ GHC.Types.Char SecondHW.$fShowPlayer2 eta }) -}
+5005e1bcc0ab6f944e6be0130b06f2c0
+  $fShowResult :: GHC.Show.Show SecondHW.Result
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ SecondHW.Result
+                  SecondHW.$fShowResult_$cshowsPrec
+                  SecondHW.$fShowResult_$cshow
+                  SecondHW.$fShowResult_$cshowList -}
+5005e1bcc0ab6f944e6be0130b06f2c0
+  $fShowResult1 :: SecondHW.Result -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ (w :: SecondHW.Result) (w1 :: GHC.Base.String) ->
+                 SecondHW.$w$cshowsPrec 0# w w1) -}
+21e5edcbb7d3bddf8a4e52fe8fc23853
+  $fShowResult2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Cicle "#) -}
+677b5afa015b31836a0f0d1f14aebe35
+  $fShowResult3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Result "#) -}
+5005e1bcc0ab6f944e6be0130b06f2c0
+  $fShowResult_$cshow :: SecondHW.Result -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: SecondHW.Result) ->
+                 SecondHW.$fShowResult_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+5005e1bcc0ab6f944e6be0130b06f2c0
+  $fShowResult_$cshowList :: [SecondHW.Result] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ SecondHW.Result
+                   SecondHW.$fShowResult1) -}
+5005e1bcc0ab6f944e6be0130b06f2c0
+  $fShowResult_$cshowsPrec ::
+    GHC.Types.Int -> SecondHW.Result -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: SecondHW.Result)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 SecondHW.$w$cshowsPrec ww1 w1 w2 }) -}
+98b28d5eb76820f22cbe38bcb820ede4
+  $fUnitMonster :: SecondHW.Unit SecondHW.Monster
+  DFunId
+  {- Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ SecondHW.Monster
+                  SecondHW.$fUnitMonster_$cgetHealth
+                  SecondHW.$fUnitMonster_$cgetAttack
+                  SecondHW.$fUnitMonster_$cgetDefence
+                  SecondHW.$fUnitMonster_$cgetEquipmentAttackInt
+                  SecondHW.$fUnitMonster_$cgetEquipmentAttack
+                  SecondHW.$fUnitMonster_$cgetEquipmentDefenceInt
+                  SecondHW.$fUnitMonster_$cgetEquipmentDefence
+                  SecondHW.$fUnitMonster_$chasHealthPotion
+                  SecondHW.$fUnitMonster_$cgetHealthPotion
+                  SecondHW.$fUnitMonster_$cgetFullAttack
+                  SecondHW.$fUnitMonster_$cgetFullDefence
+                  SecondHW.$fUnitMonster_$chealthEquals -}
+1e91c5bd04051a45ca710f0be72e7cc0
+  $fUnitMonster1 :: GHC.Types.Int
+  {- Strictness: x -}
+a6f01f1b08e98814465dac90875346df
+  $fUnitMonster2 :: GHC.Types.Int
+  {- Strictness: x -}
+e24a5a077c421180399d4d702a5d0f13
+  $fUnitMonster3 :: GHC.Types.Bool
+  {- Strictness: x -}
+300de936e30dfd2bde578c16aab19911
+  $fUnitMonster_$cgetAttack :: SecondHW.Monster -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: SecondHW.Monster) ->
+                 case ds of wild {
+                   SecondHW.Monster ds1 attack ds2 ds3 ds4 ds5 -> attack
+                   SecondHW.DeadMonster -> SecondHW.$fShowEquipment2 }) -}
+c1df63ab492fae645b94bfdeac93478b
+  $fUnitMonster_$cgetDefence :: SecondHW.Monster -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: SecondHW.Monster) ->
+                 case ds of wild {
+                   SecondHW.Monster ds1 ds2 defence ds3 ds4 ds5 -> defence
+                   SecondHW.DeadMonster -> SecondHW.$fShowEquipment2 }) -}
+0f9b7bdae7e55a7da841af4b7c3e7202
+  $fUnitMonster_$cgetEquipmentAttack ::
+    SecondHW.Monster -> SecondHW.Equipment
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: SecondHW.Monster) ->
+                 case ds of wild {
+                   SecondHW.Monster ds1 ds2 ds3 x ds4 ds5 -> x
+                   SecondHW.DeadMonster -> SecondHW.NoEquipment }) -}
+d50d9b703e287b657da7af3885ad63e3
+  $fUnitMonster_$cgetEquipmentAttackInt ::
+    SecondHW.Monster -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: SecondHW.Monster) ->
+                 case ds of wild {
+                   SecondHW.Monster ds1 ds2 ds3 ds4 ds5 ds6
+                   -> case ds4 of wild1 {
+                        DEFAULT -> SecondHW.$fUnitMonster2
+                        SecondHW.Attack x -> x
+                        SecondHW.NoEquipment -> SecondHW.$fShowEquipment2 }
+                   SecondHW.DeadMonster -> SecondHW.$fShowEquipment2 }) -}
+05b3020ec79fc5452b605d1259e57f12
+  $fUnitMonster_$cgetEquipmentDefence ::
+    SecondHW.Monster -> SecondHW.Equipment
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: SecondHW.Monster) ->
+                 case ds of wild {
+                   SecondHW.Monster ds1 ds2 ds3 ds4 x ds5 -> x
+                   SecondHW.DeadMonster -> SecondHW.NoEquipment }) -}
+783f750348c4a6489774d28c9729fe14
+  $fUnitMonster_$cgetEquipmentDefenceInt ::
+    SecondHW.Monster -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: SecondHW.Monster) ->
+                 case ds of wild {
+                   SecondHW.Monster ds1 ds2 ds3 ds4 ds5 ds6
+                   -> case ds5 of wild1 {
+                        DEFAULT -> SecondHW.$fUnitMonster1
+                        SecondHW.Defence x -> x
+                        SecondHW.NoEquipment -> SecondHW.$fShowEquipment2 }
+                   SecondHW.DeadMonster -> SecondHW.$fShowEquipment2 }) -}
+a068dff1ddb66a3d74b55760db077a5c
+  $fUnitMonster_$cgetFullAttack :: SecondHW.Monster -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S,U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: SecondHW.Monster) ->
+                 case w of wild {
+                   SecondHW.Monster ds attack ds1 ds2 ds3 ds4
+                   -> case attack of wild1 { GHC.Types.I# x ->
+                      case ds2 of wild2 {
+                        DEFAULT -> SecondHW.$fUnitMonster2
+                        SecondHW.Attack x1
+                        -> case x1 of wild3 { GHC.Types.I# y ->
+                           GHC.Types.I# (GHC.Prim.+# x y) }
+                        SecondHW.NoEquipment -> GHC.Types.I# x } }
+                   SecondHW.DeadMonster -> GHC.Types.I# 0# }) -}
+ef13a3f234173c1b0859ca8a4c7d36d4
+  $fUnitMonster_$cgetFullDefence :: SecondHW.Monster -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S,U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: SecondHW.Monster) ->
+                 case w of wild {
+                   SecondHW.Monster ds ds1 defence ds2 ds3 ds4
+                   -> case defence of wild1 { GHC.Types.I# x ->
+                      case ds3 of wild2 {
+                        DEFAULT -> SecondHW.$fUnitMonster1
+                        SecondHW.Defence x1
+                        -> case x1 of wild3 { GHC.Types.I# y ->
+                           GHC.Types.I# (GHC.Prim.+# x y) }
+                        SecondHW.NoEquipment -> GHC.Types.I# x } }
+                   SecondHW.DeadMonster -> GHC.Types.I# 0# }) -}
+f2db604286fd5772451c71baed1e198b
+  $fUnitMonster_$cgetHealth :: SecondHW.Monster -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: SecondHW.Monster) ->
+                 case ds of wild {
+                   SecondHW.Monster health ds1 ds2 ds3 ds4 ds5 -> health
+                   SecondHW.DeadMonster -> SecondHW.$fShowEquipment2 }) -}
+53565a593b8e61c528a572c637bb2441
+  $fUnitMonster_$cgetHealthPotion ::
+    SecondHW.Monster -> SecondHW.Equipment
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: SecondHW.Monster) ->
+                 case ds of wild {
+                   SecondHW.Monster ds1 ds2 ds3 ds4 ds5 x -> x
+                   SecondHW.DeadMonster -> SecondHW.NoEquipment }) -}
+3f51dfb2f1e3a4c9d658b7824c8e37de
+  $fUnitMonster_$chasHealthPotion ::
+    SecondHW.Monster -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: SecondHW.Monster) ->
+                 case ds of wild {
+                   SecondHW.Monster ds1 ds2 ds3 ds4 ds5 ds6
+                   -> case ds6 of wild1 {
+                        DEFAULT -> SecondHW.$fUnitMonster3
+                        SecondHW.HealthPotion -> GHC.Types.True
+                        SecondHW.NoEquipment -> GHC.Types.False }
+                   SecondHW.DeadMonster -> GHC.Types.False }) -}
+0c2a89b342b4576847db9cc8310fe352
+  $fUnitMonster_$chealthEquals ::
+    SecondHW.Monster -> SecondHW.Monster -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (monster1 :: SecondHW.Monster)
+                   (monster2 :: SecondHW.Monster) ->
+                 case monster1 of wild {
+                   SecondHW.Monster health ds ds1 ds2 ds3 ds4
+                   -> case monster2 of wild1 {
+                        SecondHW.Monster health1 ds5 ds6 ds7 ds8 ds9
+                        -> GHC.Classes.eqInt health health1
+                        SecondHW.DeadMonster
+                        -> case health of wild2 { GHC.Types.I# x ->
+                           case x of wild3 {
+                             DEFAULT -> GHC.Types.False 0# -> GHC.Types.True } } }
+                   SecondHW.DeadMonster
+                   -> case monster2 of wild1 {
+                        SecondHW.Monster health ds ds1 ds2 ds3 ds4
+                        -> case health of wild2 { GHC.Types.I# y ->
+                           case y of wild3 {
+                             DEFAULT -> GHC.Types.False 0# -> GHC.Types.True } }
+                        SecondHW.DeadMonster -> GHC.Types.True } }) -}
+98b28d5eb76820f22cbe38bcb820ede4
+  $fUnitPlayer :: SecondHW.Unit SecondHW.Player
+  DFunId
+  {- Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ SecondHW.Player
+                  SecondHW.$fUnitPlayer_$cgetHealth
+                  SecondHW.$fUnitPlayer_$cgetAttack
+                  SecondHW.$fUnitPlayer_$cgetDefence
+                  SecondHW.$fUnitPlayer_$cgetEquipmentAttackInt
+                  SecondHW.$fUnitPlayer_$cgetEquipmentAttack
+                  SecondHW.$fUnitPlayer_$cgetEquipmentDefenceInt
+                  SecondHW.$fUnitPlayer_$cgetEquipmentDefence
+                  SecondHW.$fUnitPlayer_$chasHealthPotion
+                  SecondHW.$fUnitPlayer_$cgetHealthPotion
+                  SecondHW.$fUnitPlayer_$cgetFullAttack
+                  SecondHW.$fUnitPlayer_$cgetFullDefence
+                  SecondHW.$fUnitPlayer_$chealthEquals -}
+a60424b413b78c1b4501f84c546ff356
+  $fUnitPlayer1 :: GHC.Types.Int
+  {- Strictness: x -}
+4d89d95e5f8aa121bcf15e9e47009ad4
+  $fUnitPlayer2 :: GHC.Types.Int
+  {- Strictness: x -}
+68b431d344dd039a771bb9b8ccf6282d
+  $fUnitPlayer_$cgetAttack :: SecondHW.Player -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: SecondHW.Player) ->
+                 case ds of wild {
+                   SecondHW.Player ds1 attack ds2 ds3 ds4 -> attack
+                   SecondHW.DeadPlayer -> SecondHW.$fShowEquipment2 }) -}
+0b018f6e0d33863b28275eaf7f2d86a5
+  $fUnitPlayer_$cgetDefence :: SecondHW.Player -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: SecondHW.Player) ->
+                 case ds of wild {
+                   SecondHW.Player ds1 ds2 defence ds3 ds4 -> defence
+                   SecondHW.DeadPlayer -> SecondHW.$fShowEquipment2 }) -}
+e9cf392d7f7dd28e3f8ccbcc4620165b
+  $fUnitPlayer_$cgetEquipmentAttack ::
+    SecondHW.Player -> SecondHW.Equipment
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: SecondHW.Player) ->
+                 case ds of wild {
+                   SecondHW.Player ds1 ds2 ds3 x ds4 -> x
+                   SecondHW.DeadPlayer -> SecondHW.NoEquipment }) -}
+a5b394c2ec50ac4842091b2ac5663fd8
+  $fUnitPlayer_$cgetEquipmentAttackInt ::
+    SecondHW.Player -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: SecondHW.Player) ->
+                 case ds of wild {
+                   SecondHW.Player ds1 ds2 ds3 ds4 ds5
+                   -> case ds4 of wild1 {
+                        DEFAULT -> SecondHW.$fUnitPlayer2
+                        SecondHW.Attack x -> x
+                        SecondHW.NoEquipment -> SecondHW.$fShowEquipment2 }
+                   SecondHW.DeadPlayer -> SecondHW.$fShowEquipment2 }) -}
+709c881a47672952a1e6645ad105432d
+  $fUnitPlayer_$cgetEquipmentDefence ::
+    SecondHW.Player -> SecondHW.Equipment
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: SecondHW.Player) ->
+                 case ds of wild {
+                   SecondHW.Player ds1 ds2 ds3 ds4 x -> x
+                   SecondHW.DeadPlayer -> SecondHW.NoEquipment }) -}
+21000101fa5c4ec1ce5f01748e70ba5a
+  $fUnitPlayer_$cgetEquipmentDefenceInt ::
+    SecondHW.Player -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: SecondHW.Player) ->
+                 case ds of wild {
+                   SecondHW.Player ds1 ds2 ds3 ds4 ds5
+                   -> case ds5 of wild1 {
+                        DEFAULT -> SecondHW.$fUnitPlayer1
+                        SecondHW.Defence x -> x
+                        SecondHW.NoEquipment -> SecondHW.$fShowEquipment2 }
+                   SecondHW.DeadPlayer -> SecondHW.$fShowEquipment2 }) -}
+fc4cd0db28d4f538bd95f76e35ce7f17
+  $fUnitPlayer_$cgetFullAttack :: SecondHW.Player -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S,U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: SecondHW.Player) ->
+                 case w of wild {
+                   SecondHW.Player ds attack ds1 ds2 ds3
+                   -> case attack of wild1 { GHC.Types.I# x ->
+                      case ds2 of wild2 {
+                        DEFAULT -> SecondHW.$fUnitPlayer2
+                        SecondHW.Attack x1
+                        -> case x1 of wild3 { GHC.Types.I# y ->
+                           GHC.Types.I# (GHC.Prim.+# x y) }
+                        SecondHW.NoEquipment -> GHC.Types.I# x } }
+                   SecondHW.DeadPlayer -> GHC.Types.I# 0# }) -}
+188155ad4bd59d818bf54327119ca9b7
+  $fUnitPlayer_$cgetFullDefence :: SecondHW.Player -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S,U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: SecondHW.Player) ->
+                 case w of wild {
+                   SecondHW.Player ds ds1 defence ds2 ds3
+                   -> case defence of wild1 { GHC.Types.I# x ->
+                      case ds3 of wild2 {
+                        DEFAULT -> SecondHW.$fUnitPlayer1
+                        SecondHW.Defence x1
+                        -> case x1 of wild3 { GHC.Types.I# y ->
+                           GHC.Types.I# (GHC.Prim.+# x y) }
+                        SecondHW.NoEquipment -> GHC.Types.I# x } }
+                   SecondHW.DeadPlayer -> GHC.Types.I# 0# }) -}
+968cc6d3b7e2f48187161304befb8cf2
+  $fUnitPlayer_$cgetHealth :: SecondHW.Player -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: SecondHW.Player) ->
+                 case ds of wild {
+                   SecondHW.Player health ds1 ds2 ds3 ds4 -> health
+                   SecondHW.DeadPlayer -> SecondHW.$fShowEquipment2 }) -}
+7edf09ebf560fb6d315ebbc8a148ba38
+  $fUnitPlayer_$cgetHealthPotion ::
+    SecondHW.Player -> SecondHW.Equipment
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: SecondHW.Player) -> SecondHW.NoEquipment) -}
+f246d284167536e753030a5ad86bd43c
+  $fUnitPlayer_$chasHealthPotion :: SecondHW.Player -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: SecondHW.Player) -> GHC.Types.False) -}
+ef599a7766b4d0eccd99d8194e9e4113
+  $fUnitPlayer_$chealthEquals ::
+    SecondHW.Player -> SecondHW.Player -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (player1 :: SecondHW.Player)
+                   (player2 :: SecondHW.Player) ->
+                 case player1 of wild {
+                   SecondHW.Player health ds ds1 ds2 ds3
+                   -> case player2 of wild1 {
+                        SecondHW.Player health1 ds4 ds5 ds6 ds7
+                        -> GHC.Classes.eqInt health health1
+                        SecondHW.DeadPlayer
+                        -> case health of wild2 { GHC.Types.I# x ->
+                           case x of wild3 {
+                             DEFAULT -> GHC.Types.False 0# -> GHC.Types.True } } }
+                   SecondHW.DeadPlayer
+                   -> case player2 of wild1 {
+                        SecondHW.Player health ds ds1 ds2 ds3
+                        -> case health of wild2 { GHC.Types.I# y ->
+                           case y of wild3 {
+                             DEFAULT -> GHC.Types.False 0# -> GHC.Types.True } }
+                        SecondHW.DeadPlayer -> GHC.Types.True } }) -}
+26a06591252ec998d1b0c3555c328b1f
+  $tc'Attack :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10900388250158750215##
+                   14404156238835696903##
+                   SecondHW.$trModule
+                   SecondHW.$tc'Attack1) -}
+533699c6bf541fa7595d01a44de75811
+  $tc'Attack1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Attack"#) -}
+8aa8f802ca56cbd459ecd6118bc85c81
+  $tc'C:Unit :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15976926881442025845##
+                   2439490074199369440##
+                   SecondHW.$trModule
+                   SecondHW.$tc'C:Unit1) -}
+d4869f27b16221dcf40fd8c1a5e976be
+  $tc'C:Unit1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'C:Unit"#) -}
+cde394ac0ad9c9c42ebe3b50f26227ae
+  $tc'Cicle :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14014482451575137617##
+                   2465022806712417383##
+                   SecondHW.$trModule
+                   SecondHW.$tc'Cicle1) -}
+a38ce5148d62ce568fc14deaa8b71df9
+  $tc'Cicle1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Cicle"#) -}
+19c79580c8dcc15a69f665b1d30b0086
+  $tc'DeadMonster :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15118058965956921912##
+                   13254092376630668150##
+                   SecondHW.$trModule
+                   SecondHW.$tc'DeadMonster1) -}
+618010705089007833e5b6bd2520207e
+  $tc'DeadMonster1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'DeadMonster"#) -}
+7190b2705009cab0cc8fdcd3c9c1fc66
+  $tc'DeadPlayer :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3186191300578143829##
+                   3813233224952395184##
+                   SecondHW.$trModule
+                   SecondHW.$tc'DeadPlayer1) -}
+b41a60d08a125bfa20c496cb1775cc01
+  $tc'DeadPlayer1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'DeadPlayer"#) -}
+2bd267926a54c583d3befb801d3c6edc
+  $tc'Defence :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2805096772532955591##
+                   3515494494868842498##
+                   SecondHW.$trModule
+                   SecondHW.$tc'Defence1) -}
+e05337f7ad94cbf3b54d37dbf58a80d2
+  $tc'Defence1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Defence"#) -}
+15d5ec481a136209f675a2af5d87eca4
+  $tc'HealthPotion :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14791126092184728467##
+                   805241349551711102##
+                   SecondHW.$trModule
+                   SecondHW.$tc'HealthPotion1) -}
+ec9c1f7ec84b2683bf78f9fdaaab7b48
+  $tc'HealthPotion1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'HealthPotion"#) -}
+68133b1ae4481e8fbf069098b3972447
+  $tc'Monster :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16476247421876802574##
+                   2175806907917862597##
+                   SecondHW.$trModule
+                   SecondHW.$tc'Monster1) -}
+75cfb42964e17be6a0e73b187f8c97c8
+  $tc'Monster1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Monster"#) -}
+01de7dd846d600c13f14ae41a5f22ce5
+  $tc'NoEquipment :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13891393299079038138##
+                   8830149585659765971##
+                   SecondHW.$trModule
+                   SecondHW.$tc'NoEquipment1) -}
+ab6688581e6239ceeea6348a97f44ede
+  $tc'NoEquipment1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'NoEquipment"#) -}
+d39b29897b87c8a6aa4ce1425a79c021
+  $tc'Player :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16217126972167510827##
+                   1772647678528657939##
+                   SecondHW.$trModule
+                   SecondHW.$tc'Player1) -}
+7523157fb2affa7bff29f886a5533517
+  $tc'Player1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Player"#) -}
+ff6975e6d8971e3379bc4556fa7ffdf2
+  $tc'Result :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13879806867673131941##
+                   18150015120717815236##
+                   SecondHW.$trModule
+                   SecondHW.$tc'Result1) -}
+6d37c87f52314b9ba137565c92bde569
+  $tc'Result1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Result"#) -}
+23562dac753e48ffbbc42edb7e98c02d
+  $tcEquipment :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14137620154806620555##
+                   14325981033651414339##
+                   SecondHW.$trModule
+                   SecondHW.$tcEquipment1) -}
+87b8a9cf358d018f88243dee501b4be1
+  $tcEquipment1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Equipment"#) -}
+555b18904fe66efb7c06123ee47a83d3
+  $tcMonster :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1956483571525598324##
+                   15955547775661782978##
+                   SecondHW.$trModule
+                   SecondHW.$tcMonster1) -}
+8ac1be0b6a1ac212d869999fe99c64d1
+  $tcMonster1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Monster"#) -}
+552c0e3a87cea5905bbacfaade6a813c
+  $tcPlayer :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   737951760194073629##
+                   12487297962226829604##
+                   SecondHW.$trModule
+                   SecondHW.$tcPlayer1) -}
+14573b13ac0dd802758ebc67ab2f660d
+  $tcPlayer1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Player"#) -}
+ee720d99a606d0a4605ec110a6aa080a
+  $tcResult :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17068310828345050055##
+                   10288985917030092199##
+                   SecondHW.$trModule
+                   SecondHW.$tcResult1) -}
+3ab419d70623190bfe9ee7b4e5c6cb5d
+  $tcResult1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Result"#) -}
+aea1f54ce6a733aefa59be82370cc296
+  $tcUnit :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8296008568104397109##
+                   9690118215162288263##
+                   SecondHW.$trModule
+                   SecondHW.$tcUnit1) -}
+c613cf5f41e660ca28adfdad04227c45
+  $tcUnit1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Unit"#) -}
+9b344ee854a2e491cd590524285c3701
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   SecondHW.$trModule2
+                   SecondHW.$trModule1) -}
+d033ec21e6d076482ec69bf933515871
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "SecondHW"#) -}
+5eebb8473ccf228a9ef4c559f9b898a5
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+5005e1bcc0ab6f944e6be0130b06f2c0
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> SecondHW.Result -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 3, Strictness: <S,U><S,1*U><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (w :: SecondHW.Result)
+                   (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   SecondHW.Result b1 b2
+                   -> let {
+                        p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x :: GHC.Base.String)[OneShot] ->
+                          GHC.Base.++
+                            @ GHC.Types.Char
+                            SecondHW.$fShowResult3
+                            (case b1 of ww2 { GHC.Types.I# ww3 ->
+                             case GHC.Show.$wshowSignedInt
+                                    11#
+                                    ww3
+                                    (GHC.Types.:
+                                       @ GHC.Types.Char
+                                       GHC.Show.showSpace1
+                                       (SecondHW.$fShowPlayer_$cshowsPrec
+                                          SecondHW.$fShowMonster3
+                                          b2
+                                          x)) of ww4 { (#,#) ww5 ww6 ->
+                             GHC.Types.: @ GHC.Types.Char ww5 ww6 } })
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11#) of wild1 {
+                        GHC.Types.False -> p w1
+                        GHC.Types.True
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows9
+                             (p (GHC.Types.: @ GHC.Types.Char GHC.Show.shows6 w1)) }
+                   SecondHW.Cicle b1
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11#) of wild1 {
+                        GHC.Types.False
+                        -> GHC.Base.++
+                             @ GHC.Types.Char
+                             SecondHW.$fShowResult2
+                             (GHC.Types.:
+                                @ GHC.Types.Char
+                                GHC.Show.shows8
+                                (GHC.Show.showLitString
+                                   b1
+                                   (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 w1)))
+                        GHC.Types.True
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows9
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                SecondHW.$fShowResult2
+                                (GHC.Types.:
+                                   @ GHC.Types.Char
+                                   GHC.Show.shows8
+                                   (GHC.Show.showLitString
+                                      b1
+                                      (GHC.Types.:
+                                         @ GHC.Types.Char
+                                         GHC.Show.shows8
+                                         (GHC.Types.:
+                                            @ GHC.Types.Char
+                                            GHC.Show.shows6
+                                            w1))))) } }) -}
+e95417122456ef437e46126976409b8e
+  $wdeleteMax :: TreePrinters.Tree a -> TreePrinters.Tree a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+b9fe8dda7f4896130d71143aabcaa3e1
+  $wdeleteMin :: TreePrinters.Tree a -> TreePrinters.Tree a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+7f007dbfb1f8ae167bd6aaec4b1f70e8
+  $wfindMax :: TreePrinters.Tree a -> a
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
+b246937d033d976c2dc47dd1299110cb
+  $wfindMin :: TreePrinters.Tree a -> a
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
+25b6ac94343bc2886ca431126456d138
+  $wfromListDecartWithCurTree ::
+    GHC.Classes.Ord a =>
+    [a]
+    -> TreePrinters.Tree (GHC.Types.Int, a)
+    -> TreePrinters.Tree (GHC.Types.Int, a)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,C(C1(U)),A,A,A)><S,1*U><S,1*U>,
+     Inline: [0] -}
+26249fb9e06ac50d69784014bad27ba1
+  $wgetSizeForParent ::
+    TreePrinters.Tree (GHC.Types.Int, a)
+    -> TreePrinters.Tree (GHC.Types.Int, a) -> GHC.Prim.Int#
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>, Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: TreePrinters.Tree (GHC.Types.Int, a))
+                   (w1 :: TreePrinters.Tree (GHC.Types.Int, a)) ->
+                 case w of wild {
+                   TreePrinters.Leaf
+                   -> case w1 of wild1 {
+                        TreePrinters.Leaf -> 1#
+                        TreePrinters.Node ds ds1 ds2
+                        -> case ds of wild2 { (,) size ds3 ->
+                           case size of wild3 { GHC.Types.I# y -> GHC.Prim.+# y 1# } } }
+                   TreePrinters.Node ds ds1 ds2
+                   -> case ds of wild1 { (,) size ds3 ->
+                      case size of wild2 { GHC.Types.I# x ->
+                      case w1 of wild3 {
+                        TreePrinters.Leaf -> GHC.Prim.+# x 1#
+                        TreePrinters.Node ds4 ds5 ds6
+                        -> case ds4 of wild4 { (,) size1 ds7 ->
+                           case size1 of wild5 { GHC.Types.I# y ->
+                           GHC.Prim.+# (GHC.Prim.+# x y) 1# } } } } } }) -}
+572f32fdbcd088b4bdb33011f98ab537
+  $winsert ::
+    GHC.Classes.Ord a =>
+    a
+    -> TreePrinters.Tree a
+    -> (# a, TreePrinters.Tree a, TreePrinters.Tree a #)
+  {- Arity: 3,
+     Strictness: <L,U(U(C(C1(U)),A),A,C(C1(U)),A,C(C1(U)),A,A,A)><L,U><S,1*U>,
+     Inline: [0] -}
+2bb4d5ff480677c6f0ed8da48c4be10f
+  $wmonsterTurn ::
+    SecondHW.Player
+    -> SecondHW.Monster -> (# SecondHW.Player, SecondHW.Monster #)
+  {- Arity: 2, Strictness: <S,U><S,U>, Inline: [0] -}
+dcd2bb9fc3a6480c0ef92a85ca85f953
+  $wplayerTurn ::
+    SecondHW.Player
+    -> SecondHW.Monster -> (# SecondHW.Player, SecondHW.Monster #)
+  {- Arity: 2, Strictness: <S,U><S,U>, Inline: [0] -}
+6f4e8c8b2986d1b96169eb775474834f
+  $wrmqDecart ::
+    TreePrinters.Tree (GHC.Types.Int, a)
+    -> GHC.Types.Int -> GHC.Types.Int -> GHC.Base.Maybe a
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,1*U><L,U(U)><L,1*U(U)>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: TreePrinters.Tree (GHC.Types.Int, a))
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: GHC.Types.Int) ->
+                 case SecondHW.$wsplit
+                        @ a
+                        w
+                        (case w1 of wild { GHC.Types.I# x ->
+                         GHC.Types.I# (GHC.Prim.-# x 1#) }) of ww { (#,#) ww1 ww2 ->
+                 case SecondHW.$wsplit
+                        @ a
+                        ww2
+                        (case w2 of wild { GHC.Types.I# x ->
+                         case w1 of wild1 { GHC.Types.I# y ->
+                         GHC.Types.I#
+                           (GHC.Prim.+# (GHC.Prim.-# x y) 1#) } }) of ww3 { (#,#) ww4 ww5 ->
+                 case ww4 of wild {
+                   TreePrinters.Leaf -> GHC.Base.Nothing @ a
+                   TreePrinters.Node ds ds1 ds2
+                   -> case ds of wild1 { (,) ds3 x -> GHC.Base.Just @ a x } } } }) -}
+8c184a7cb93105754ba40bdfb4900b8d
+  $wsplit ::
+    TreePrinters.Tree (GHC.Types.Int, a)
+    -> GHC.Types.Int
+    -> (# TreePrinters.Tree (GHC.Types.Int, a),
+          TreePrinters.Tree (GHC.Types.Int, a) #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U(U)>,
+     Inline: [0] -}
+13b2255ccdf8c98af16aae780049226d
+  $wtoList :: TreePrinters.Tree a -> [a]
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
+aa3355d5b48e97ee95820d0771eded8b
+  data Equipment
+    = Attack GHC.Types.Int
+    | Defence GHC.Types.Int
+    | HealthPotion
+    | NoEquipment
+4991e3093504971c7a1cf930bc9a0d9a
+  data Monster
+    = Monster GHC.Types.Int
+              GHC.Types.Int
+              GHC.Types.Int
+              SecondHW.Equipment
+              SecondHW.Equipment
+              SecondHW.Equipment
+    | DeadMonster
+795e6268bf7ad53ad90c9106a9b116a7
+  data Player
+    = Player GHC.Types.Int
+             GHC.Types.Int
+             GHC.Types.Int
+             SecondHW.Equipment
+             SecondHW.Equipment
+    | DeadPlayer
+5005e1bcc0ab6f944e6be0130b06f2c0
+  data Result
+    = Result GHC.Types.Int SecondHW.Player | Cicle GHC.Base.String
+98b28d5eb76820f22cbe38bcb820ede4
+  class Unit a where
+    getHealth :: a -> GHC.Types.Int
+    getAttack :: a -> GHC.Types.Int
+    getDefence :: a -> GHC.Types.Int
+    getEquipmentAttackInt :: a -> GHC.Types.Int
+    getEquipmentAttack :: a -> SecondHW.Equipment
+    getEquipmentDefenceInt :: a -> GHC.Types.Int
+    getEquipmentDefence :: a -> SecondHW.Equipment
+    hasHealthPotion :: a -> GHC.Types.Bool
+    getHealthPotion :: a -> SecondHW.Equipment
+    getFullAttack :: a -> GHC.Types.Int
+    getFullDefence :: a -> GHC.Types.Int
+    healthEquals :: a -> a -> GHC.Types.Bool
+    {-# MINIMAL getHealth, getAttack, getDefence,
+                getEquipmentAttackInt, getEquipmentAttack, getEquipmentDefenceInt,
+                getEquipmentDefence, hasHealthPotion, getHealthPotion,
+                getFullAttack, getFullDefence, healthEquals #-}
+4086d5158f4f3cfbf99a9c60ed560392
+  delete ::
+    GHC.Classes.Ord a =>
+    a -> TreePrinters.Tree a -> TreePrinters.Tree a
+  {- Arity: 3,
+     Strictness: <L,U(U(C(C1(U)),A),A,C(C1(U)),A,C(C1(U)),A,A,A)><L,U><S,1*U> -}
+6433beb051958d22377e69f1ecef1c47
+  deleteMax ::
+    GHC.Classes.Ord a => TreePrinters.Tree a -> TreePrinters.Tree a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a (w :: GHC.Classes.Ord a) (w1 :: TreePrinters.Tree a) ->
+                 SecondHW.$wdeleteMax @ a w1) -}
+6df218b40017dc4cbf15432a7f734737
+  deleteMin ::
+    GHC.Classes.Ord a => TreePrinters.Tree a -> TreePrinters.Tree a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a (w :: GHC.Classes.Ord a) (w1 :: TreePrinters.Tree a) ->
+                 SecondHW.$wdeleteMin @ a w1) -}
+66707df3208c392e45a9510f04564303
+  fightRound ::
+    SecondHW.Player
+    -> SecondHW.Monster -> (SecondHW.Player, SecondHW.Monster)
+  {- Arity: 2, Strictness: <S,U><S,U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: SecondHW.Player) (w1 :: SecondHW.Monster) ->
+                 case SecondHW.$wplayerTurn w w1 of ww { (#,#) ww1 ww2 ->
+                 case SecondHW.$wmonsterTurn ww1 ww2 of ww3 { (#,#) ww4 ww5 ->
+                 (ww4, ww5) } }) -}
+eff4e63d9c760cae74d990af2af117a9
+  find ::
+    GHC.Classes.Ord a => a -> TreePrinters.Tree a -> GHC.Base.Maybe a
+  {- Arity: 3,
+     Strictness: <L,U(U(C(C1(U)),A),A,C(C1(U)),A,C(C1(U)),A,A,A)><L,U><S,1*U> -}
+f753192a221902f2fe6172dfa77ec230
+  findMax :: GHC.Classes.Ord a => TreePrinters.Tree a -> a
+  {- Arity: 2, Strictness: <L,A><S,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a (w :: GHC.Classes.Ord a) (w1 :: TreePrinters.Tree a) ->
+                 SecondHW.$wfindMax @ a w1) -}
+5a7af9293f39ec8ae0deeeae2f6bc5c2
+  findMin :: GHC.Classes.Ord a => TreePrinters.Tree a -> a
+  {- Arity: 2, Strictness: <L,A><S,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a (w :: GHC.Classes.Ord a) (w1 :: TreePrinters.Tree a) ->
+                 SecondHW.$wfindMin @ a w1) -}
+95bd8946502f1bb8ebe135c9ab197a7e
+  fromList :: GHC.Classes.Ord a => [a] -> TreePrinters.Tree a
+  {- Arity: 2,
+     Strictness: <L,U(U(C(C1(U)),A),A,C(C1(U)),A,C(C1(U)),A,A,A)><S,1*U> -}
+5e81b5b1a3d96d0aac6cd5036ecde393
+  fromListDecart ::
+    GHC.Classes.Ord a => [a] -> TreePrinters.Tree (GHC.Types.Int, a)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,C(C1(U)),A,A,A)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a ($dOrd :: GHC.Classes.Ord a) (list :: [a]) ->
+                 SecondHW.fromListDecartWithCurTree
+                   @ a
+                   $dOrd
+                   list
+                   (TreePrinters.Leaf @ (GHC.Types.Int, a))
+                   SecondHW.fromListDecart1) -}
+c5b43faf59fda86ceaf1db817e8b08e1
+  fromListDecart1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+88351c0e636ed4c611067a7ad22a771c
+  fromListDecartWithCurTree ::
+    GHC.Classes.Ord a =>
+    [a]
+    -> TreePrinters.Tree (GHC.Types.Int, a)
+    -> GHC.Types.Int
+    -> TreePrinters.Tree (GHC.Types.Int, a)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,C(C1(U)),A,A,A)><S,1*U><S,1*U><L,A>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, True)
+                (\ @ a
+                   (w :: GHC.Classes.Ord a)
+                   (w1 :: [a])
+                   (w2 :: TreePrinters.Tree (GHC.Types.Int, a))
+                   (w3 :: GHC.Types.Int) ->
+                 SecondHW.$wfromListDecartWithCurTree @ a w w1 w2) -}
+e3613822f3867602cdf937cb8e4db1a6
+  getSize ::
+    GHC.Classes.Ord a =>
+    TreePrinters.Tree (GHC.Types.Int, a) -> GHC.Types.Int
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (ds :: TreePrinters.Tree (GHC.Types.Int, a)) ->
+                 case ds of wild {
+                   TreePrinters.Leaf -> SecondHW.$fShowEquipment2
+                   TreePrinters.Node ds1 ds2 ds3
+                   -> case ds1 of wild1 { (,) size ds4 -> size } }) -}
+5d6394dd227056a282dba96f0fdb6781
+  getSizeForParent ::
+    GHC.Classes.Ord a =>
+    TreePrinters.Tree (GHC.Types.Int, a)
+    -> TreePrinters.Tree (GHC.Types.Int, a) -> GHC.Types.Int
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,A><S,1*U><S,1*U>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: GHC.Classes.Ord a)
+                   (w1 :: TreePrinters.Tree (GHC.Types.Int, a))
+                   (w2 :: TreePrinters.Tree (GHC.Types.Int, a)) ->
+                 case SecondHW.$wgetSizeForParent @ a w1 w2 of ww { DEFAULT ->
+                 GHC.Types.I# ww }) -}
+40db88c144997314bb088a32a6a6a77a
+  gloriousBattle ::
+    SecondHW.Player -> [SecondHW.Monster] -> SecondHW.Result
+  {- Arity: 2, Strictness: <L,U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (player :: SecondHW.Player) (monsters :: [SecondHW.Monster]) ->
+                 SecondHW.gloriousBattleWithLevelCounter
+                   player
+                   monsters
+                   SecondHW.$fShowEquipment2) -}
+543b22f43a69496ae814707b31ce89ea
+  gloriousBattleWithLevelCounter ::
+    SecondHW.Player
+    -> [SecondHW.Monster] -> GHC.Types.Int -> SecondHW.Result
+  {- Arity: 3, Strictness: <L,U><S,1*U><L,U(U)> -}
+e8e46f99206adc155e5235e0e1561188
+  insert ::
+    GHC.Classes.Ord a =>
+    a -> TreePrinters.Tree a -> TreePrinters.Tree a
+  {- Arity: 3,
+     Strictness: <L,U(U(C(C1(U)),A),A,C(C1(U)),A,C(C1(U)),A,A,A)><L,U><S,1*U>m2,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: GHC.Classes.Ord a)
+                   (w1 :: a)
+                   (w2 :: TreePrinters.Tree a) ->
+                 case SecondHW.$winsert @ a w w1 w2 of ww { (#,,#) ww1 ww2 ww3 ->
+                 TreePrinters.Node @ a ww1 ww2 ww3 }) -}
+6b0575688b7931215c120455c2551652
+  insertDecart ::
+    GHC.Classes.Ord a =>
+    TreePrinters.Tree (GHC.Types.Int, a)
+    -> a -> GHC.Types.Int -> TreePrinters.Tree (GHC.Types.Int, a)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,C(C1(U)),A,A,A)><S,1*U><L,U><L,U(U)>,
+     Unfolding: (\ @ a
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (tree :: TreePrinters.Tree (GHC.Types.Int, a))
+                   (element :: a)
+                   (position :: GHC.Types.Int) ->
+                 case SecondHW.$wsplit @ a tree position of ww { (#,#) ww1 ww2 ->
+                 SecondHW.merge
+                   @ a
+                   $dOrd
+                   (SecondHW.merge
+                      @ a
+                      $dOrd
+                      ww1
+                      (TreePrinters.Node
+                         @ (GHC.Types.Int, a)
+                         (SecondHW.fromListDecart1, element)
+                         (TreePrinters.Leaf @ (GHC.Types.Int, a))
+                         (TreePrinters.Leaf @ (GHC.Types.Int, a))))
+                   ww2 }) -}
+ef9a0b8384cd4080d2b1547fa7659d6d
+  maraudAttackEquipment ::
+    SecondHW.Player -> SecondHW.Monster -> SecondHW.Player
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: (\ (player :: SecondHW.Player)
+                   (monster :: SecondHW.Monster) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> SecondHW.Player
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x :: GHC.Prim.Int#)[OneShot] ->
+                     let {
+                       $j1 :: GHC.Prim.Int# -> SecondHW.Player
+                         {- Arity: 1, Strictness: <S,U> -}
+                       = \ (y :: GHC.Prim.Int#)[OneShot] ->
+                         case GHC.Prim.tagToEnum#
+                                @ GHC.Types.Bool
+                                (GHC.Prim.># x y) of wild {
+                           GHC.Types.False -> player
+                           GHC.Types.True
+                           -> SecondHW.Player
+                                (case player of wild1 {
+                                   SecondHW.Player health ds ds1 ds2 ds3 -> health
+                                   SecondHW.DeadPlayer -> SecondHW.$fShowEquipment2 })
+                                (case player of wild1 {
+                                   SecondHW.Player ds attack ds1 ds2 ds3 -> attack
+                                   SecondHW.DeadPlayer -> SecondHW.$fShowEquipment2 })
+                                (case player of wild1 {
+                                   SecondHW.Player ds ds1 defence ds2 ds3 -> defence
+                                   SecondHW.DeadPlayer -> SecondHW.$fShowEquipment2 })
+                                (case monster of wild1 {
+                                   SecondHW.Monster ds ds1 ds2 x1 ds3 ds4 -> x1
+                                   SecondHW.DeadMonster -> SecondHW.NoEquipment })
+                                (case player of wild1 {
+                                   SecondHW.Player ds ds1 ds2 ds3 x1 -> x1
+                                   SecondHW.DeadPlayer -> SecondHW.NoEquipment }) }
+                     } in
+                     case player of wild {
+                       SecondHW.Player ds ds1 ds2 ds3 ds4
+                       -> case ds3 of wild1 {
+                            DEFAULT -> case SecondHW.$fUnitPlayer2 ret_ty SecondHW.Player of {}
+                            SecondHW.Attack x1 -> case x1 of wild2 { GHC.Types.I# y -> $j1 y }
+                            SecondHW.NoEquipment -> $j1 0# }
+                       SecondHW.DeadPlayer -> $j1 0# }
+                 } in
+                 case monster of wild {
+                   SecondHW.Monster ds ds1 ds2 ds3 ds4 ds5
+                   -> case ds3 of wild1 {
+                        DEFAULT
+                        -> case SecondHW.$fUnitMonster2 ret_ty SecondHW.Player of {}
+                        SecondHW.Attack x -> case x of wild2 { GHC.Types.I# x1 -> $j x1 }
+                        SecondHW.NoEquipment -> $j 0# }
+                   SecondHW.DeadMonster -> $j 0# }) -}
+60eec18f55faf64e1fff066bb9cbf2c6
+  maraudDefenceEquipment ::
+    SecondHW.Player -> SecondHW.Monster -> SecondHW.Player
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: (\ (player :: SecondHW.Player)
+                   (monster :: SecondHW.Monster) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> SecondHW.Player
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x :: GHC.Prim.Int#)[OneShot] ->
+                     let {
+                       $j1 :: GHC.Prim.Int# -> SecondHW.Player
+                         {- Arity: 1, Strictness: <S,U> -}
+                       = \ (y :: GHC.Prim.Int#)[OneShot] ->
+                         case GHC.Prim.tagToEnum#
+                                @ GHC.Types.Bool
+                                (GHC.Prim.># x y) of wild {
+                           GHC.Types.False -> player
+                           GHC.Types.True
+                           -> SecondHW.Player
+                                (case player of wild1 {
+                                   SecondHW.Player health ds ds1 ds2 ds3 -> health
+                                   SecondHW.DeadPlayer -> SecondHW.$fShowEquipment2 })
+                                (case player of wild1 {
+                                   SecondHW.Player ds attack ds1 ds2 ds3 -> attack
+                                   SecondHW.DeadPlayer -> SecondHW.$fShowEquipment2 })
+                                (case player of wild1 {
+                                   SecondHW.Player ds ds1 defence ds2 ds3 -> defence
+                                   SecondHW.DeadPlayer -> SecondHW.$fShowEquipment2 })
+                                (case player of wild1 {
+                                   SecondHW.Player ds ds1 ds2 x1 ds3 -> x1
+                                   SecondHW.DeadPlayer -> SecondHW.NoEquipment })
+                                (case monster of wild1 {
+                                   SecondHW.Monster ds ds1 ds2 ds3 x1 ds4 -> x1
+                                   SecondHW.DeadMonster -> SecondHW.NoEquipment }) }
+                     } in
+                     case player of wild {
+                       SecondHW.Player ds ds1 ds2 ds3 ds4
+                       -> case ds4 of wild1 {
+                            DEFAULT -> case SecondHW.$fUnitPlayer1 ret_ty SecondHW.Player of {}
+                            SecondHW.Defence x1 -> case x1 of wild2 { GHC.Types.I# y -> $j1 y }
+                            SecondHW.NoEquipment -> $j1 0# }
+                       SecondHW.DeadPlayer -> $j1 0# }
+                 } in
+                 case monster of wild {
+                   SecondHW.Monster ds ds1 ds2 ds3 ds4 ds5
+                   -> case ds4 of wild1 {
+                        DEFAULT
+                        -> case SecondHW.$fUnitMonster1 ret_ty SecondHW.Player of {}
+                        SecondHW.Defence x -> case x of wild2 { GHC.Types.I# x1 -> $j x1 }
+                        SecondHW.NoEquipment -> $j 0# }
+                   SecondHW.DeadMonster -> $j 0# }) -}
+7f463578b7c1a15ac60a468b784826b3
+  maraudHealthPotion ::
+    SecondHW.Player -> SecondHW.Monster -> SecondHW.Player
+  {- Arity: 2, Strictness: <L,U><S,1*U>,
+     Unfolding: (\ (player :: SecondHW.Player)
+                   (monster :: SecondHW.Monster) ->
+                 case monster of wild {
+                   SecondHW.Monster ds ds1 ds2 ds3 ds4 ds5
+                   -> case ds5 of wild1 {
+                        DEFAULT
+                        -> case SecondHW.$fUnitMonster3 ret_ty SecondHW.Player of {}
+                        SecondHW.HealthPotion
+                        -> SecondHW.Player
+                             SecondHW.maraudHealthPotion1
+                             (case player of wild2 {
+                                SecondHW.Player ds6 attack ds7 ds8 ds9 -> attack
+                                SecondHW.DeadPlayer -> SecondHW.$fShowEquipment2 })
+                             (case player of wild2 {
+                                SecondHW.Player ds6 ds7 defence ds8 ds9 -> defence
+                                SecondHW.DeadPlayer -> SecondHW.$fShowEquipment2 })
+                             (case player of wild2 {
+                                SecondHW.Player ds6 ds7 ds8 x ds9 -> x
+                                SecondHW.DeadPlayer -> SecondHW.NoEquipment })
+                             (case player of wild2 {
+                                SecondHW.Player ds6 ds7 ds8 ds9 x -> x
+                                SecondHW.DeadPlayer -> SecondHW.NoEquipment })
+                        SecondHW.NoEquipment -> player }
+                   SecondHW.DeadMonster -> player }) -}
+44e53b39b7434a9a47ac1fbe30e317d1
+  maraudHealthPotion1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 100#) -}
+de937f6d47ba4fda4e82dd0c9060788f
+  maraudMonster ::
+    SecondHW.Player -> SecondHW.Monster -> SecondHW.Player
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (player :: SecondHW.Player) (monster :: SecondHW.Monster) ->
+                 SecondHW.maraudHealthPotion
+                   (SecondHW.maraudDefenceEquipment
+                      (SecondHW.maraudAttackEquipment player monster)
+                      monster)
+                   monster) -}
+10ac595d41ae4808e57d4ddbbef4c4a1
+  merge ::
+    GHC.Classes.Ord a =>
+    TreePrinters.Tree (GHC.Types.Int, a)
+    -> TreePrinters.Tree (GHC.Types.Int, a)
+    -> TreePrinters.Tree (GHC.Types.Int, a)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,C(C1(U)),A,A,A)><S,1*U><S,1*U> -}
+f1c1e762b364b478e74b74a5838a1142
+  monsterTurn ::
+    SecondHW.Player
+    -> SecondHW.Monster -> (SecondHW.Player, SecondHW.Monster)
+  {- Arity: 2, Strictness: <S,U><S,U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: SecondHW.Player) (w1 :: SecondHW.Monster) ->
+                 case SecondHW.$wmonsterTurn w w1 of ww { (#,#) ww1 ww2 ->
+                 (ww1, ww2) }) -}
+010d9a4df3cd209626e53f99d010a582
+  monstersSample :: [SecondHW.Monster]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ SecondHW.Monster
+                   SecondHW.monstersSample9
+                   SecondHW.monstersSample1) -}
+53680993ea80c755e5585a614ba20f1f
+  monstersSample1 :: [SecondHW.Monster]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ SecondHW.Monster
+                   SecondHW.monstersSample8
+                   SecondHW.monstersSample2) -}
+d8a99097b6f36f47f12550c32ec33dd9
+  monstersSample2 :: [SecondHW.Monster]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ SecondHW.Monster
+                   SecondHW.monstersSample3
+                   (GHC.Types.[] @ SecondHW.Monster)) -}
+69b1d23b67d910aa11fc61efd44d3be8
+  monstersSample3 :: SecondHW.Monster
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (SecondHW.Monster
+                   SecondHW.maraudHealthPotion1
+                   SecondHW.monstersSample7
+                   SecondHW.$fShowMonster3
+                   SecondHW.monstersSample6
+                   SecondHW.monstersSample4
+                   SecondHW.NoEquipment) -}
+f28f4432668d5b52f8b6fb062b9f26f7
+  monstersSample4 :: SecondHW.Equipment
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (SecondHW.Defence SecondHW.monstersSample5) -}
+e739250445f7e61868ba4a36dc9ead68
+  monstersSample5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 10#) -}
+e4e74d33d3984baa258250aeb6853814
+  monstersSample6 :: SecondHW.Equipment
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (SecondHW.Attack SecondHW.monstersSample5) -}
+858d62749da51495fcec935a1c90aa58
+  monstersSample7 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 9#) -}
+771480b7d57671f6fca360d0961a0971
+  monstersSample8 :: SecondHW.Monster
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (SecondHW.Monster
+                   SecondHW.maraudHealthPotion1
+                   SecondHW.$fShowMonster3
+                   SecondHW.fromListDecart1
+                   SecondHW.NoEquipment
+                   SecondHW.monstersSample4
+                   SecondHW.NoEquipment) -}
+0f8dcae70ccb7976b29a8712703c099e
+  monstersSample9 :: SecondHW.Monster
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (SecondHW.Monster
+                   SecondHW.maraudHealthPotion1
+                   SecondHW.fromListDecart1
+                   SecondHW.fromListDecart1
+                   SecondHW.monstersSample6
+                   SecondHW.NoEquipment
+                   SecondHW.NoEquipment) -}
+1adbc00cb80bce5c9a03e8b92877c1d7
+  playerTurn ::
+    SecondHW.Player
+    -> SecondHW.Monster -> (SecondHW.Player, SecondHW.Monster)
+  {- Arity: 2, Strictness: <S,U><S,U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: SecondHW.Player) (w1 :: SecondHW.Monster) ->
+                 case SecondHW.$wplayerTurn w w1 of ww { (#,#) ww1 ww2 ->
+                 (ww1, ww2) }) -}
+62d0e028c4b5386b19fd8fae2679e159
+  removeDecart ::
+    GHC.Classes.Ord a =>
+    TreePrinters.Tree (GHC.Types.Int, a)
+    -> GHC.Types.Int -> TreePrinters.Tree (GHC.Types.Int, a)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,C(C1(U)),A,A,A)><S,1*U><L,1*U(U)> -}
+c59a2a58ff9b37bfc6e3696d3c2ca29f
+  rmqDecart ::
+    GHC.Classes.Ord a =>
+    TreePrinters.Tree (GHC.Types.Int, a)
+    -> GHC.Types.Int -> GHC.Types.Int -> GHC.Base.Maybe a
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,A><S,1*U><L,U(U)><L,1*U(U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, True)
+                (\ @ a
+                   (w :: GHC.Classes.Ord a)
+                   (w1 :: TreePrinters.Tree (GHC.Types.Int, a))
+                   (w2 :: GHC.Types.Int)
+                   (w3 :: GHC.Types.Int) ->
+                 SecondHW.$wrmqDecart @ a w1 w2 w3) -}
+ded6a4068548d70da1e9389d638eabf8
+  safeInit :: [a] -> Data.Either.Either GHC.Base.String [a]
+  {- Arity: 1, Strictness: <S,1*U> -}
+05399414074fb81fd45c56d5895e0dab
+  safeTail :: [a] -> Data.Either.Either GHC.Base.String [a]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: [a]) ->
+                 case ds of wild {
+                   [] -> SecondHW.safeTail1 @ a
+                   : ds1 xs -> Data.Either.Right @ GHC.Base.String @ [a] xs }) -}
+3173e7907ecf016d0f2b83b3e3a9149a
+  safeTail1 :: Data.Either.Either [GHC.Types.Char] [a]
+  {- Strictness: m1,
+     Unfolding: (\ @ a ->
+                 Data.Either.Left @ [GHC.Types.Char] @ [a] SecondHW.safeTail2) -}
+4644f4fce0f13775cbe6c2c0cf056c72
+  safeTail2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "The List is empty"#) -}
+592af03af1e1aefc5b7c3ef6bd3a8097
+  split ::
+    GHC.Classes.Ord a =>
+    TreePrinters.Tree (GHC.Types.Int, a)
+    -> GHC.Types.Int
+    -> (TreePrinters.Tree (GHC.Types.Int, a),
+        TreePrinters.Tree (GHC.Types.Int, a))
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,A><S,1*U><L,U(U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: GHC.Classes.Ord a)
+                   (w1 :: TreePrinters.Tree (GHC.Types.Int, a))
+                   (w2 :: GHC.Types.Int) ->
+                 case SecondHW.$wsplit @ a w1 w2 of ww { (#,#) ww1 ww2 ->
+                 (ww1, ww2) }) -}
+9edecb6471f27ababa48800f0b36ba1f
+  startPlayer :: SecondHW.Player
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (SecondHW.Player
+                   SecondHW.maraudHealthPotion1
+                   SecondHW.monstersSample5
+                   SecondHW.monstersSample5
+                   SecondHW.NoEquipment
+                   SecondHW.NoEquipment) -}
+1bffad29b06878d2422843fc84bdeb76
+  strip :: [a] -> [a]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (l :: [a]) ->
+                 case l of wild {
+                   [] -> GHC.Types.[] @ a
+                   : ds xs
+                   -> case SecondHW.safeInit @ a xs of wild1 {
+                        Data.Either.Left ds1 -> GHC.Types.[] @ a
+                        Data.Either.Right ans -> ans } }) -}
+f5c3ac49da4b98b543276780bb0bacef
+  toList :: GHC.Classes.Ord a => TreePrinters.Tree a -> [a]
+  {- Arity: 2, Strictness: <L,A><S,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a (w :: GHC.Classes.Ord a) (w1 :: TreePrinters.Tree a) ->
+                 SecondHW.$wtoList @ a w1) -}
+instance [safe] GHC.Show.Show [SecondHW.Equipment]
+  = SecondHW.$fShowEquipment
+instance [safe] GHC.Show.Show [SecondHW.Monster]
+  = SecondHW.$fShowMonster
+instance [safe] GHC.Show.Show [SecondHW.Player]
+  = SecondHW.$fShowPlayer
+instance [safe] GHC.Show.Show [SecondHW.Result]
+  = SecondHW.$fShowResult
+instance [safe] SecondHW.Unit [SecondHW.Monster]
+  = SecondHW.$fUnitMonster
+instance [safe] SecondHW.Unit [SecondHW.Player]
+  = SecondHW.$fUnitPlayer
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

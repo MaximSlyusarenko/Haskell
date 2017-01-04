@@ -1,0 +1,279 @@
+
+==================== FINAL INTERFACE ====================
+2016-10-03 10:44:51.680328 UTC
+
+interface main@main:TreePrinters 8001
+  interface hash: e6cd5fa2d1ef7188e9f348e7faed2e18
+  ABI hash: bfcb2321e377a34de832e798056ac0bd
+  export-list hash: 4685953fbb6e299dfed767d6c15ac578
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b35c401c65eb439f444bc321a287dc0e
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  TreePrinters.directoryPrint
+  TreePrinters.verticalPrint
+  TreePrinters.Tree{TreePrinters.Leaf TreePrinters.Node}
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:Data.Char eb33dc25ecb52d018a0ca26590e2b50b
+import  -/  base-4.9.0.0:Data.Foldable 8aeb682f6c74f97fcf0ace0d608a43ea
+import  -/  base-4.9.0.0:Data.List 49b86831b79b49ce5d4d9416ecba61df
+import  -/  base-4.9.0.0:Data.OldList 0058409f994fb13ae0616e3f1e5b4dae
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.0.0:GHC.List 13d2451194c1c6e53b4f4f07947736dd
+import  -/  base-4.9.0.0:GHC.Num 48f506a8f4ecf06285d0a0706594dcc0
+import  -/  base-4.9.0.0:GHC.Real 08bf4acb5f2508f89d6fbcd57fe232e9
+import  -/  base-4.9.0.0:GHC.Show 952347a6ab730bcb25c0854d8bc6ca51
+import  -/  base-4.9.0.0:GHC.Unicode 2343b0871604cc5116abba8f24d75b42
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+753f5a9dea2cfa7504c41db234ea95a2
+  $fFunctorTree :: GHC.Base.Functor TreePrinters.Tree
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ TreePrinters.Tree
+                  TreePrinters.$fFunctorTree_$cfmap
+                  TreePrinters.$fFunctorTree_$c<$ -}
+753f5a9dea2cfa7504c41db234ea95a2
+  $fFunctorTree_$c<$ ::
+    a -> TreePrinters.Tree b -> TreePrinters.Tree a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a @ b (eta :: a) (eta1 :: TreePrinters.Tree b) ->
+                 TreePrinters.$fFunctorTree_$cfmap
+                   @ b
+                   @ a
+                   (\ (ds :: b) -> eta)
+                   eta1) -}
+753f5a9dea2cfa7504c41db234ea95a2
+  $fFunctorTree_$cfmap ::
+    (a -> b) -> TreePrinters.Tree a -> TreePrinters.Tree b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U> -}
+753f5a9dea2cfa7504c41db234ea95a2
+  $fShowTree ::
+    GHC.Show.Show a => GHC.Show.Show (TreePrinters.Tree a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(C(C1(U)),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a ($dShow :: GHC.Show.Show a).
+                  @ (TreePrinters.Tree a)
+                  (TreePrinters.$fShowTree_$cshowsPrec @ a $dShow)
+                  (TreePrinters.$fShowTree_$cshow @ a $dShow)
+                  (TreePrinters.$fShowTree_$cshowList @ a $dShow) -}
+1e9217a53774f3b7bf448704a65ef33b
+  $fShowTree1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+753f5a9dea2cfa7504c41db234ea95a2
+  $fShowTree_$cshow ::
+    GHC.Show.Show a => TreePrinters.Tree a -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(C(C1(U)),A,A)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a ($dShow :: GHC.Show.Show a) (x :: TreePrinters.Tree a) ->
+                 TreePrinters.$fShowTree_$cshowsPrec
+                   @ a
+                   $dShow
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+753f5a9dea2cfa7504c41db234ea95a2
+  $fShowTree_$cshowList ::
+    GHC.Show.Show a => [TreePrinters.Tree a] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (eta :: [TreePrinters.Tree a])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (TreePrinters.Tree a)
+                   (TreePrinters.$fShowTree_$cshowsPrec
+                      @ a
+                      $dShow
+                      TreePrinters.$fShowTree1)
+                   eta
+                   eta1) -}
+753f5a9dea2cfa7504c41db234ea95a2
+  $fShowTree_$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Types.Int -> TreePrinters.Tree a -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A,A)><L,1*U(U)><S,1*U> -}
+ad9b88f7a83d21b3b2d8ac593f447080
+  $tc'Leaf :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3428772151466730131##
+                   5652447501016173246##
+                   TreePrinters.$trModule
+                   TreePrinters.$tc'Leaf1) -}
+18a91c6925fdf336fb301a7651b84073
+  $tc'Leaf1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Leaf"#) -}
+6db92a0daad76ba4344a76fc041cc09f
+  $tc'Node :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12315563006695695165##
+                   17853370065733834613##
+                   TreePrinters.$trModule
+                   TreePrinters.$tc'Node1) -}
+c5f6e0b7b5af582e0e6f35013b08010e
+  $tc'Node1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Node"#) -}
+620f01a946fa52179d9d420998fcd017
+  $tcTree :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1686638986579863365##
+                   3677672019468556449##
+                   TreePrinters.$trModule
+                   TreePrinters.$tcTree1) -}
+22ce3817f70e6a90f83a73febea30566
+  $tcTree1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Tree"#) -}
+46ae749ec0b6940a33dab82b6d8229e9
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   TreePrinters.$trModule2
+                   TreePrinters.$trModule1) -}
+be1d519fcb7554a023c7d55e6da1cee6
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "TreePrinters"#) -}
+06e433c70599b5a4cbf0d419c9e34139
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+753f5a9dea2cfa7504c41db234ea95a2
+  data Tree a
+    = Leaf | Node a (TreePrinters.Tree a) (TreePrinters.Tree a)
+e131a95f08409523d7482f061558e5d4
+  type TreeRows = [GHC.Base.String]
+0ad0eaededda79696cea10c5221869ea
+  directoryPrint ::
+    GHC.Show.Show a => TreePrinters.Tree a -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(A,C(U),A)><S,1*U>,
+     Unfolding: (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (eta :: TreePrinters.Tree a) ->
+                 letrec {
+                   treeIndent :: TreePrinters.Tree a -> [[GHC.Types.Char]]
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: TreePrinters.Tree a) ->
+                     case ds of wild {
+                       TreePrinters.Leaf -> TreePrinters.directoryPrint5
+                       TreePrinters.Node k lb rb
+                       -> GHC.Types.:
+                            @ [GHC.Types.Char]
+                            (GHC.CString.unpackAppendCString#
+                               "--"#
+                               (GHC.Show.show @ a $dShow k))
+                            (let {
+                               ds1 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+                               = case treeIndent rb of wild1 {
+                                   [] -> TreePrinters.directoryPrint4 : r rs -> (r, rs) }
+                             } in
+                             let {
+                               z :: [GHC.Types.Char]
+                               = GHC.CString.unpackAppendCString#
+                                   "  `"#
+                                   (case ds1 of ds2 { (,) r rs -> r })
+                             } in
+                             let {
+                               z1 :: [[GHC.Types.Char]]
+                               = case ds1 of ds2 { (,) r rs ->
+                                 GHC.Base.map
+                                   @ [GHC.Types.Char]
+                                   @ [GHC.Types.Char]
+                                   TreePrinters.directoryPrint2
+                                   rs }
+                             } in
+                             let {
+                               z2 :: [[GHC.Types.Char]] = GHC.Types.: @ [GHC.Types.Char] z z1
+                             } in
+                             letrec {
+                               go :: [[GHC.Types.Char]] -> [[GHC.Types.Char]]
+                                 {- Arity: 1, Strictness: <S,1*U> -}
+                               = \ (ds2 :: [[GHC.Types.Char]]) ->
+                                 case ds2 of wild1 {
+                                   [] -> z2
+                                   : y ys
+                                   -> GHC.Types.:
+                                        @ [GHC.Types.Char]
+                                        (GHC.Base.++
+                                           @ GHC.Types.Char
+                                           TreePrinters.directoryPrint1
+                                           y)
+                                        (go ys) }
+                             } in
+                             go (treeIndent lb)) }
+                 } in
+                 Data.OldList.unlines (treeIndent eta)) -}
+3a83bbf675284a947324fd50d731e109
+  directoryPrint1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "  |"#) -}
+4870f55bcf1368cd488b7c379b2c1588
+  directoryPrint2 :: [GHC.Types.Char] -> [GHC.Types.Char]
+  {- Arity: 1,
+     Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   TreePrinters.directoryPrint3) -}
+6f56c652c0596e0eab78f1ed9add2a4e
+  directoryPrint3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "   "#) -}
+056b851ff1f646ced7fefffb123eee69
+  directoryPrint4 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: x -}
+ae90493a14b9247b40277128728f8717
+  directoryPrint5 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   TreePrinters.directoryPrint6
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+adfd7a378f980ddc06b63e5cd7d4c80d
+  directoryPrint6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "-- /-"#) -}
+e3607123b8cf23931c99276820f099c8
+  rowPrinter ::
+    TreePrinters.Tree GHC.Base.String -> TreePrinters.TreeRows
+  {- Arity: 1, Strictness: <S,1*U> -}
+ad6739940b5b83f7991facdc2658283d
+  verticalPrint ::
+    GHC.Show.Show a => TreePrinters.Tree a -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,1*U(A,1*C(U),A)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a ($dShow :: GHC.Show.Show a) (eta :: TreePrinters.Tree a) ->
+                 Data.OldList.unlines
+                   (TreePrinters.rowPrinter
+                      (TreePrinters.$fFunctorTree_$cfmap
+                         @ a
+                         @ GHC.Base.String
+                         (GHC.Show.show @ a $dShow)
+                         eta))) -}
+instance [safe] GHC.Base.Functor [TreePrinters.Tree]
+  = TreePrinters.$fFunctorTree
+instance [safe] GHC.Show.Show [TreePrinters.Tree]
+  = TreePrinters.$fShowTree
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

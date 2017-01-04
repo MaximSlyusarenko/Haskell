@@ -1,0 +1,42 @@
+Configuring cassava-0.4.5.1...
+Building cassava-0.4.5.1...
+Preprocessing library cassava-0.4.5.1...
+[ 1 of 10] Compiling Data.Csv.Conversion.Internal ( Data/Csv/Conversion/Internal.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Data/Csv/Conversion/Internal.o )
+[ 2 of 10] Compiling Data.Csv.Util    ( Data/Csv/Util.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Data/Csv/Util.o )
+[ 3 of 10] Compiling Data.Csv.Types   ( Data/Csv/Types.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Data/Csv/Types.o )
+[ 4 of 10] Compiling Data.Csv.Parser  ( Data/Csv/Parser.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Data/Csv/Parser.o )
+[ 5 of 10] Compiling Data.Csv.Conversion ( Data/Csv/Conversion.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Data/Csv/Conversion.o )
+
+Data/Csv/Conversion.hs:620:10: warning: [-Wredundant-constraints]
+    • Redundant constraint: Ord a
+    • In the instance declaration for ‘ToNamedRecord (M.Map a b)’
+
+Data/Csv/Conversion.hs:627:10: warning: [-Wredundant-constraints]
+    • Redundant constraints: (Eq a, Hashable a)
+    • In the instance declaration for ‘ToNamedRecord (HM.HashMap a b)’
+
+Data/Csv/Conversion.hs:906:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Num a
+    • In the type signature for:
+           parseSigned :: (Integral a, Num a) =>
+                          String -> B8.ByteString -> Parser a
+[ 6 of 10] Compiling Data.Csv.Encoding ( Data/Csv/Encoding.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Data/Csv/Encoding.o )
+[ 7 of 10] Compiling Data.Csv.Builder ( Data/Csv/Builder.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Data/Csv/Builder.o )
+[ 8 of 10] Compiling Data.Csv.Incremental ( Data/Csv/Incremental.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Data/Csv/Incremental.o )
+
+Data/Csv/Incremental.hs:327:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: ToRecord a
+    • In the type signature for:
+           encodeWith :: ToRecord a =>
+                         EncodeOptions -> Builder a -> L.ByteString
+
+Data/Csv/Incremental.hs:372:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: ToNamedRecord a
+    • In the type signature for:
+           encodeByNameWith :: ToNamedRecord a =>
+                               EncodeOptions -> Header -> NamedBuilder a -> L.ByteString
+[ 9 of 10] Compiling Data.Csv.Streaming ( Data/Csv/Streaming.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Data/Csv/Streaming.o )
+[10 of 10] Compiling Data.Csv         ( Data/Csv.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Data/Csv.o )
+Installing library in
+/Users/maksim/.stack/snapshots/x86_64-osx/lts-7.10/8.0.1/lib/x86_64-osx-ghc-8.0.1/cassava-0.4.5.1-22PYShGmDl3JZqkoUNotZ7
+Registering cassava-0.4.5.1...

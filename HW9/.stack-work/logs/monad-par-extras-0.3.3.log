@@ -1,0 +1,27 @@
+Configuring monad-par-extras-0.3.3...
+Building monad-par-extras-0.3.3...
+Preprocessing library monad-par-extras-0.3.3...
+[1 of 5] Compiling Control.Monad.Par.State ( Control/Monad/Par/State.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Monad/Par/State.o )
+[2 of 5] Compiling Control.Monad.Par.RNG ( Control/Monad/Par/RNG.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Monad/Par/RNG.o )
+
+Control/Monad/Par/RNG.hs:43:1: warning: [-Wtabs]
+    Tab character found here, and in four further locations.
+    Please use spaces instead.
+[3 of 5] Compiling Control.Monad.Par.Pedigree ( Control/Monad/Par/Pedigree.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Monad/Par/Pedigree.o )
+
+Control/Monad/Par/Pedigree.hs:38:1: warning: [-Wtabs]
+    Tab character found here.
+    Please use spaces instead.
+[4 of 5] Compiling Control.Monad.Par.Combinator ( Control/Monad/Par/Combinator.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Monad/Par/Combinator.o )
+
+Control/Monad/Par/Combinator.hs:88:1: warning: [-Wtabs]
+    Tab character found here, and in 24 further locations.
+    Please use spaces instead.
+[5 of 5] Compiling Control.Monad.Par.AList ( Control/Monad/Par/AList.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Monad/Par/AList.o )
+
+Control/Monad/Par/AList.hs:59:1: warning: [-Wtabs]
+    Tab character found here, and in 17 further locations.
+    Please use spaces instead.
+Installing library in
+/Users/maksim/.stack/snapshots/x86_64-osx/lts-7.10/8.0.1/lib/x86_64-osx-ghc-8.0.1/monad-par-extras-0.3.3-EJjMy6Ffx2aEZ9sTU5n83S
+Registering monad-par-extras-0.3.3...

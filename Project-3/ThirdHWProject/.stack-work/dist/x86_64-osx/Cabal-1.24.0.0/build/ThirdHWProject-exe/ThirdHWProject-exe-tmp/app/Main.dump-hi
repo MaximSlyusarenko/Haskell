@@ -1,0 +1,2140 @@
+
+==================== FINAL INTERFACE ====================
+2016-10-03 10:46:18.728467 UTC
+
+interface main@main:Main [orphan module] 8001
+  interface hash: f9af245cdc23de4ce8ad9e6e89c9ee9a
+  ABI hash: c4c2981f5f13568f1f2e51d3bfad154a
+  export-list hash: 1b5233e68eedb1c18b43abbd608b9e83
+  orphan hash: f63b0b46396780b44c79a5c993776a0e
+  flag hash: 051fcb2f2e96c349ef4b3b9c30869fab
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.addToList
+  Main.compareCoins
+  Main.convertToStandardPair
+  Main.findNext
+  Main.getNext
+  Main.getNextWithDifferentRight
+  Main.main
+  Main.t
+  Main.y
+  Main.z
+  Main.Blue
+  Main.Coin{Main.Coin getCoin}
+  Main.ComparableColor{Main.getColorNumber}
+  Main.Map{Main.deleteMap Main.emptyMap Main.findMap Main.fromListMap Main.insertMap Main.nextMap Main.toListMap}
+  Main.Pair{Main.Pair}
+  Main.Red
+  Main.Set{Main.deleteSet Main.emptySet Main.findSet Main.fromList Main.insertSet Main.next Main.toList}
+module dependencies: SecondHW TreePrinters
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:Data.Foldable 8aeb682f6c74f97fcf0ace0d608a43ea
+import  -/  base-4.9.0.0:Data.Tuple acb0ed10307ed88df6c81b8589f4de16
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.0.0:GHC.Num 48f506a8f4ecf06285d0a0706594dcc0
+import  -/  base-4.9.0.0:GHC.Show 952347a6ab730bcb25c0854d8bc6ca51
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  ghc-prim-0.5.0.0:GHC.Types 7378e41b7749213c8c88ceb6b0665d4c
+import  -/  SecondHW f1fefca095c23f18634c145265b5cfe5
+  exports: ffd45380ee733eb60d03aad234e3dcb1
+  delete 4086d5158f4f3cfbf99a9c60ed560392
+  find eff4e63d9c760cae74d990af2af117a9
+  findMin 5a7af9293f39ec8ae0deeeae2f6bc5c2
+  insert e8e46f99206adc155e5235e0e1561188
+import  -/  TreePrinters bfcb2321e377a34de832e798056ac0bd
+  exports: 4685953fbb6e299dfed767d6c15ac578
+  Leaf ebf254969d5b87047bd6032946499ce1
+  Node 716913473e39c1ba41b651d210984b6c
+  Tree 753f5a9dea2cfa7504c41db234ea95a2
+82a592b5dcca4db7e396b0545062afb8
+  $fComparableColorBlue :: Main.ComparableColor Main.Blue
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>m,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Main.$fComparableColorBlue_$cgetColorNumber
+                  `cast`
+                (Sym (Main.N:ComparableColor[0] <Main.Blue>_N)) -}
+eb097cc2db35be2db7fe8dce98c11d56
+  $fComparableColorBlue_$cgetColorNumber ::
+    Main.Coin Main.Blue -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>m,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: Main.Coin Main.Blue) -> Main.$fComparableColorBlue_z0) -}
+065d6151dea30be9bba299f8241b2e80
+  $fComparableColorBlue_z0 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+82a592b5dcca4db7e396b0545062afb8
+  $fComparableColorRed :: Main.ComparableColor Main.Red
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>m,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Main.$fComparableColorRed_$cgetColorNumber
+                  `cast`
+                (Sym (Main.N:ComparableColor[0] <Main.Red>_N)) -}
+4f4b564c579db85b052552974a2101d6
+  $fComparableColorRed1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+424d9b940926ecef0ce2a65fbc61d122
+  $fComparableColorRed_$cgetColorNumber ::
+    Main.Coin Main.Red -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>m,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: Main.Coin Main.Red) -> Main.$fComparableColorRed1) -}
+4853f4fde1e3a22a9fa9adf407077e2f
+  $fEqPair :: GHC.Classes.Eq a => GHC.Classes.Eq (Main.Pair a b)
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(C(C1(U)),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a @ b ($dEq :: GHC.Classes.Eq a).
+                  @ (Main.Pair a b)
+                  (Main.$fEqPair_$c== @ a @ b $dEq)
+                  (Main.$fEqPair_$c/= @ a @ b $dEq) -}
+4853f4fde1e3a22a9fa9adf407077e2f
+  $fEqPair_$c/= ::
+    GHC.Classes.Eq a =>
+    Main.Pair a b -> Main.Pair a b -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U(C(C1(U)),A)><L,U><L,U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ a
+                   @ b
+                   ($dEq :: GHC.Classes.Eq a)
+                   (x :: Main.Pair a b)
+                   (y1 :: Main.Pair a b) ->
+                 GHC.Classes.not (Main.$fEqPair_$c== @ a @ b $dEq x y1)) -}
+4853f4fde1e3a22a9fa9adf407077e2f
+  $fEqPair_$c== ::
+    GHC.Classes.Eq a =>
+    Main.Pair a b -> Main.Pair a b -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*U(1*U,A)><L,1*U(1*U,A)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ b
+                   ($dEq :: GHC.Classes.Eq a)
+                   (ds :: Main.Pair a b)
+                   (ds1 :: Main.Pair a b) ->
+                 GHC.Classes.==
+                   @ a
+                   $dEq
+                   (case ds `cast` (Main.N:Pair[0] <a>_N <b>_N) of wild { (,) x ds2 ->
+                    x })
+                   (case ds1
+                           `cast`
+                         (Main.N:Pair[0] <a>_N <b>_N) of wild { (,) x ds2 ->
+                    x })) -}
+4853f4fde1e3a22a9fa9adf407077e2f
+  $fEqPair_$s$c/= ::
+    Main.Pair GHC.Types.Int b
+    -> Main.Pair GHC.Types.Int b -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <L,U><L,U>, Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ b
+                   (x :: Main.Pair GHC.Types.Int b)
+                   (y1 :: Main.Pair GHC.Types.Int b) ->
+                 GHC.Classes.not (Main.$fEqPair_$s$c== @ b x y1)) -}
+4853f4fde1e3a22a9fa9adf407077e2f
+  $fEqPair_$s$c== ::
+    Main.Pair GHC.Types.Int b
+    -> Main.Pair GHC.Types.Int b -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)L),1*U(1*U(U),A)><S(S(S)L),1*U(1*U(U),A)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ b
+                   (ds :: Main.Pair GHC.Types.Int b)
+                   (ds1 :: Main.Pair GHC.Types.Int b) ->
+                 case ds
+                        `cast`
+                      (Main.N:Pair[0] <GHC.Types.Int>_N <b>_N) of wild { (,) x ds2 ->
+                 case ds1
+                        `cast`
+                      (Main.N:Pair[0] <GHC.Types.Int>_N <b>_N) of wild1 { (,) x1 ds3 ->
+                 GHC.Classes.eqInt x x1 } }) -}
+4853f4fde1e3a22a9fa9adf407077e2f
+  $fEqPair_$s$fEqPair :: GHC.Classes.Eq (Main.Pair GHC.Types.Int b)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ b.
+                  @ (Main.Pair GHC.Types.Int b)
+                  (Main.$fEqPair_$s$c== @ b)
+                  (Main.$fEqPair_$s$c/= @ b) -}
+6ff04d32610463de718486486166d6d4
+  $fFoldableTree :: Data.Foldable.Foldable TreePrinters.Tree
+  DFunId
+  {- Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ TreePrinters.Tree
+                  Main.$fFoldableTree_$cfold
+                  Main.$fFoldableTree_$cfoldMap
+                  Main.$fFoldableTree_$cfoldr
+                  Main.$fFoldableTree_$cfoldr'
+                  Main.$fFoldableTree_$cfoldl
+                  Main.$fFoldableTree_$cfoldl'
+                  Main.$fFoldableTree_$cfoldr1
+                  Main.$fFoldableTree_$cfoldl1
+                  Main.$fFoldableTree_$ctoList
+                  Main.$fFoldableTree_$cnull
+                  Main.$fFoldableTree_$clength
+                  Main.$fFoldableTree_$celem
+                  Main.$fFoldableTree_$cmaximum
+                  Main.$fFoldableTree_$cminimum
+                  Main.$fFoldableTree_$csum
+                  Main.$fFoldableTree_$cproduct -}
+c076bae46ce9629475edbaa15dbb2a6c
+  $fFoldableTree1 ::
+    GHC.Num.Num a => TreePrinters.Tree a -> Data.Monoid.Product a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(A,A,1*U,A,A,A,1*C1(U))><S,1*U>,
+     Unfolding: (\ @ a
+                   ($dNum :: GHC.Num.Num a)
+                   (eta :: TreePrinters.Tree a) ->
+                 Main.$fFoldableTree_$cfoldr
+                   @ a
+                   @ (Data.Monoid.Product a)
+                   (let {
+                      f1 :: a -> a -> a = GHC.Num.* @ a $dNum
+                    } in
+                    (\ (x :: a) -> f1 x)
+                      `cast`
+                    (<a>_R
+                     ->_R Sym (Data.Monoid.N:Product[0] <a>_R)
+                     ->_R Sym (Data.Monoid.N:Product[0] <a>_R)))
+                   (Data.Monoid.$fMonoidProduct2 @ a $dNum)
+                     `cast`
+                   (Sym (Data.Monoid.N:Product[0] <a>_R))
+                   eta) -}
+cc0598f4339b6814f997cbb4fb109a51
+  $fFoldableTree2 ::
+    GHC.Num.Num a => TreePrinters.Tree a -> Data.Monoid.Sum a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(1*U,A,A,A,A,A,1*C1(U))><S,1*U>,
+     Unfolding: (\ @ a
+                   ($dNum :: GHC.Num.Num a)
+                   (eta :: TreePrinters.Tree a) ->
+                 Main.$fFoldableTree_$cfoldr
+                   @ a
+                   @ (Data.Monoid.Sum a)
+                   (let {
+                      f1 :: a -> a -> a = GHC.Num.+ @ a $dNum
+                    } in
+                    (\ (x :: a) -> f1 x)
+                      `cast`
+                    (<a>_R
+                     ->_R Sym (Data.Monoid.N:Sum[0] <a>_R)
+                     ->_R Sym (Data.Monoid.N:Sum[0] <a>_R)))
+                   (Data.Monoid.$fMonoidSum2 @ a $dNum)
+                     `cast`
+                   (Sym (Data.Monoid.N:Sum[0] <a>_R))
+                   eta) -}
+b60c171b59556166230f5819df0b1ad2
+  $fFoldableTree3 :: a
+  {- Strictness: x -}
+5524ebd788ae124fd73770219c516fc7
+  $fFoldableTree4 :: a
+  {- Strictness: x -}
+c8c146424e9be6f1baf8e908a156a9c5
+  $fFoldableTree5 ::
+    a
+    -> (GHC.Types.Int -> GHC.Types.Int)
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+  {- Arity: 3, HasNoCafRefs,
+     Unfolding: (\ @ a
+                   (x :: a)
+                   (k :: GHC.Types.Int -> GHC.Types.Int)[OneShot]
+                   (z13 :: GHC.Types.Int) ->
+                 case z13 of wild { GHC.Types.I# x1 ->
+                 k (GHC.Types.I# (GHC.Prim.+# x1 1#)) }) -}
+842441f3947fe4f31ae1d240e2b26beb
+  $fFoldableTree6 :: a -> GHC.Types.Bool -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a (ds :: a) (ds1 :: GHC.Types.Bool) -> GHC.Types.False) -}
+5483c5dc03323bd52f4c580e4654c24c
+  $fFoldableTree7 :: a
+  {- Strictness: x -}
+09b526f6d87c024fd5541be1115eb2c6
+  $fFoldableTree8 :: a
+  {- Strictness: x -}
+c5b801e40f248ee696820f517e8aa3ee
+  $fFoldableTree_$celem ::
+    GHC.Classes.Eq a => a -> TreePrinters.Tree a -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(1*C1(U),A)><L,U>,
+     Unfolding: (\ @ a ($dEq :: GHC.Classes.Eq a) (eta :: a) ->
+                 let {
+                   f :: a -> GHC.Types.Bool = GHC.Classes.== @ a $dEq eta
+                 } in
+                 let {
+                   lvl32 :: a -> GHC.Types.Bool -> GHC.Types.Bool {- Arity: 2 -}
+                   = \ (x :: a) (ds1 :: GHC.Types.Bool)[OneShot] ->
+                     case f x of wild {
+                       GHC.Types.False -> ds1 GHC.Types.True -> GHC.Types.True }
+                 } in
+                 (\ (eta1 :: TreePrinters.Tree a) ->
+                  Main.$fFoldableTree_$cfoldr
+                    @ a
+                    @ Data.Monoid.Any
+                    lvl32
+                      `cast`
+                    (<a>_R
+                     ->_R Sym (Data.Monoid.N:Any[0])
+                     ->_R Sym (Data.Monoid.N:Any[0]))
+                    GHC.Types.False `cast` (Sym (Data.Monoid.N:Any[0]))
+                    eta1)
+                   `cast`
+                 (<TreePrinters.Tree a>_R ->_R Data.Monoid.N:Any[0])) -}
+a1b2f3b4a981a6b0b937bb9165ed5923
+  $fFoldableTree_$cfold ::
+    GHC.Base.Monoid m => TreePrinters.Tree m -> m
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(1*U,1*U,A)><S,1*U>,
+     Unfolding: (\ @ m
+                   ($dMonoid :: GHC.Base.Monoid m)
+                   (eta :: TreePrinters.Tree m) ->
+                 Main.$fFoldableTree_$cfoldr
+                   @ m
+                   @ m
+                   (let {
+                      f1 :: m -> m -> m = GHC.Base.mappend @ m $dMonoid
+                    } in
+                    \ (x :: m) -> f1 x)
+                   (GHC.Base.mempty @ m $dMonoid)
+                   eta) -}
+d118c88a85ab7d6e71e13ab9b940e644
+  $fFoldableTree_$cfoldMap ::
+    GHC.Base.Monoid m => (a -> m) -> TreePrinters.Tree a -> m
+  {- Arity: 2, Strictness: <L,U(1*U,1*U,A)><L,C(U)>,
+     Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ m
+                   @ a
+                   ($dMonoid :: GHC.Base.Monoid m)
+                   (f :: a -> m)
+                   (eta :: TreePrinters.Tree a) ->
+                 Main.$fFoldableTree_$cfoldr
+                   @ a
+                   @ m
+                   (let {
+                      f1 :: m -> m -> m = GHC.Base.mappend @ m $dMonoid
+                    } in
+                    \ (x :: a) -> f1 (f x))
+                   (GHC.Base.mempty @ m $dMonoid)
+                   eta) -}
+17a59d260345604cdb893b0b068fd239
+  $fFoldableTree_$cfoldl ::
+    (b -> a -> b) -> b -> TreePrinters.Tree a -> b
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,C(C1(U))><L,U><S,1*U>,
+     Unfolding: (\ @ b
+                   @ a
+                   (f :: b -> a -> b)
+                   (z13 :: b)
+                   (t4 :: TreePrinters.Tree a) ->
+                 (Main.$fFoldableTree_$cfoldr
+                    @ a
+                    @ (Data.Monoid.Dual (Data.Monoid.Endo b))
+                    (\ (x :: a)
+                       (eta :: Data.Monoid.Dual (Data.Monoid.Endo b))[OneShot]
+                       (eta1 :: b) ->
+                     eta `cast` (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b>_R))
+                       (f eta1 x))
+                      `cast`
+                    (<a>_R
+                     ->_R <Data.Monoid.Dual (Data.Monoid.Endo b)>_R
+                     ->_R Sym (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b>_R)))
+                    (GHC.Base.id @ b)
+                      `cast`
+                    (Sym (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b>_R)))
+                    t4)
+                   `cast`
+                 (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b>_R))
+                   z13) -}
+7c352108a7516f74f0fb9eac356a2805
+  $fFoldableTree_$cfoldl' ::
+    (b -> a -> b) -> b -> TreePrinters.Tree a -> b
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,C(C1(U))><L,U><S,1*U>,
+     Unfolding: (\ @ b
+                   @ a
+                   (f :: b -> a -> b)
+                   (z0 :: b)
+                   (xs :: TreePrinters.Tree a) ->
+                 Main.$fFoldableTree_$cfoldr
+                   @ a
+                   @ (b -> b)
+                   (\ (x :: a) (k :: b -> b)[OneShot] (z13 :: b) ->
+                    case f z13 x of x1 { DEFAULT -> k x1 })
+                   (GHC.Base.id @ b)
+                   xs
+                   z0) -}
+7b9dc7c59764a534ff72a10c7f60d068
+  $fFoldableTree_$cfoldl1 ::
+    (a -> a -> a) -> TreePrinters.Tree a -> a
+  {- Arity: 2, Strictness: <L,C(C1(U))><S,1*U>,
+     Unfolding: (\ @ a (f :: a -> a -> a) (xs :: TreePrinters.Tree a) ->
+                 case (Main.$fFoldableTree_$cfoldr
+                         @ a
+                         @ (Data.Monoid.Dual (Data.Monoid.Endo (GHC.Base.Maybe a)))
+                         (\ (x :: a)
+                            (eta :: Data.Monoid.Dual
+                                      (Data.Monoid.Endo (GHC.Base.Maybe a)))[OneShot]
+                            (eta1 :: GHC.Base.Maybe a) ->
+                          eta
+                            `cast`
+                          (Data.Monoid.N:Dual[0]
+                               (Data.Monoid.N:Endo[0] <GHC.Base.Maybe a>_R))
+                            (GHC.Base.Just
+                               @ a
+                               (case eta1 of wild {
+                                  GHC.Base.Nothing -> x GHC.Base.Just x1 -> f x1 x })))
+                           `cast`
+                         (<a>_R
+                          ->_R <Data.Monoid.Dual (Data.Monoid.Endo (GHC.Base.Maybe a))>_R
+                          ->_R Sym (Data.Monoid.N:Dual[0]
+                                        (Data.Monoid.N:Endo[0] <GHC.Base.Maybe a>_R)))
+                         (GHC.Base.id @ (GHC.Base.Maybe a))
+                           `cast`
+                         (Sym (Data.Monoid.N:Dual[0]
+                                   (Data.Monoid.N:Endo[0] <GHC.Base.Maybe a>_R)))
+                         xs)
+                        `cast`
+                      (Data.Monoid.N:Dual[0]
+                           (Data.Monoid.N:Endo[0] <GHC.Base.Maybe a>_R))
+                        (GHC.Base.Nothing @ a) of wild {
+                   GHC.Base.Nothing -> Main.$fFoldableTree7 @ a
+                   GHC.Base.Just v -> v }) -}
+a5b1580956bfd731088ad5f2423a149d
+  $fFoldableTree_$cfoldr ::
+    (a -> b -> b) -> b -> TreePrinters.Tree a -> b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,C(C1(U))><L,1*U><S,1*U> -}
+a2df6c9f119f2ac4342c4da429d313b5
+  $fFoldableTree_$cfoldr' ::
+    (a -> b -> b) -> b -> TreePrinters.Tree a -> b
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,C(C1(U))><L,U><S,1*U>,
+     Unfolding: (\ @ a
+                   @ b
+                   (f :: a -> b -> b)
+                   (z0 :: b)
+                   (xs :: TreePrinters.Tree a) ->
+                 (Main.$fFoldableTree_$cfoldr
+                    @ a
+                    @ (Data.Monoid.Dual (Data.Monoid.Endo (b -> b)))
+                    (\ (x :: a)
+                       (eta :: Data.Monoid.Dual (Data.Monoid.Endo (b -> b)))[OneShot]
+                       (eta1 :: b -> b) ->
+                     eta
+                       `cast`
+                     (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b -> b>_R))
+                       (\ (z13 :: b) -> case f x z13 of x1 { DEFAULT -> eta1 x1 }))
+                      `cast`
+                    (<a>_R
+                     ->_R <Data.Monoid.Dual (Data.Monoid.Endo (b -> b))>_R
+                     ->_R Sym (Data.Monoid.N:Dual[0]
+                                   (Data.Monoid.N:Endo[0] <b -> b>_R)))
+                    (GHC.Base.id @ (b -> b))
+                      `cast`
+                    (Sym (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b -> b>_R)))
+                    xs)
+                   `cast`
+                 (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b -> b>_R))
+                   (GHC.Base.id @ b)
+                   z0) -}
+3a04efd1a8b041d91b17aec10032f0ef
+  $fFoldableTree_$cfoldr1 ::
+    (a -> a -> a) -> TreePrinters.Tree a -> a
+  {- Arity: 2, Strictness: <L,C(C1(U))><S,1*U>,
+     Unfolding: (\ @ a (f :: a -> a -> a) (xs :: TreePrinters.Tree a) ->
+                 case Main.$fFoldableTree_$cfoldr
+                        @ a
+                        @ (GHC.Base.Maybe a)
+                        (\ (x :: a) (m :: GHC.Base.Maybe a)[OneShot] ->
+                         GHC.Base.Just
+                           @ a
+                           (case m of wild {
+                              GHC.Base.Nothing -> x GHC.Base.Just y1 -> f x y1 }))
+                        (GHC.Base.Nothing @ a)
+                        xs of wild {
+                   GHC.Base.Nothing -> Main.$fFoldableTree8 @ a
+                   GHC.Base.Just v -> v }) -}
+c1232d89c14757c0e78be0563e1226d5
+  $fFoldableTree_$clength :: TreePrinters.Tree a -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (xs :: TreePrinters.Tree a) ->
+                 Main.$fFoldableTree_$cfoldr
+                   @ a
+                   @ (GHC.Types.Int -> GHC.Types.Int)
+                   (Main.$fFoldableTree5 @ a)
+                   (GHC.Base.id @ GHC.Types.Int)
+                   xs
+                   Main.$fComparableColorBlue_z0) -}
+e24ddd356891e37000feb5574a756ab7
+  $fFoldableTree_$cmaximum ::
+    GHC.Classes.Ord a => TreePrinters.Tree a -> a
+  {- Arity: 2, Strictness: <L,U(A,A,A,A,A,C(C1(U)),A,A)><S,1*U>,
+     Unfolding: (\ @ a
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (eta :: TreePrinters.Tree a) ->
+                 case (Main.$fFoldableTree_$cfoldr
+                         @ a
+                         @ (Data.Foldable.Max a)
+                         (\ (x :: a) (eta1 :: Data.Foldable.Max a)[OneShot] ->
+                          case eta1 `cast` (Data.Foldable.N:Max[0] <a>_N) of wild {
+                            GHC.Base.Nothing
+                            -> (GHC.Base.Just @ a x)
+                                 `cast`
+                               (Sym (Data.Foldable.N:Max[0]) <a>_N)
+                            GHC.Base.Just ipv
+                            -> case GHC.Classes.>= @ a $dOrd x ipv of wild2 {
+                                 GHC.Types.False -> wild `cast` (Sym (Data.Foldable.N:Max[0]) <a>_N)
+                                 GHC.Types.True
+                                 -> (GHC.Base.Just @ a x)
+                                      `cast`
+                                    (Sym (Data.Foldable.N:Max[0]) <a>_N) } })
+                         (GHC.Base.Nothing @ a) `cast` (Sym (Data.Foldable.N:Max[0]) <a>_N)
+                         eta)
+                        `cast`
+                      (Data.Foldable.N:Max[0] <a>_N) of wild {
+                   GHC.Base.Nothing -> Main.$fFoldableTree4 @ a
+                   GHC.Base.Just v -> v }) -}
+d3858529e9c890771fca88eb8c6603d0
+  $fFoldableTree_$cminimum ::
+    GHC.Classes.Ord a => TreePrinters.Tree a -> a
+  {- Arity: 2, Strictness: <L,U(A,A,A,C(C1(U)),A,A,A,A)><S,1*U>,
+     Unfolding: (\ @ a
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (eta :: TreePrinters.Tree a) ->
+                 case (Main.$fFoldableTree_$cfoldr
+                         @ a
+                         @ (Data.Foldable.Min a)
+                         (\ (x :: a) (eta1 :: Data.Foldable.Min a)[OneShot] ->
+                          case eta1 `cast` (Data.Foldable.N:Min[0] <a>_N) of wild {
+                            GHC.Base.Nothing
+                            -> (GHC.Base.Just @ a x)
+                                 `cast`
+                               (Sym (Data.Foldable.N:Min[0]) <a>_N)
+                            GHC.Base.Just ipv
+                            -> case GHC.Classes.<= @ a $dOrd x ipv of wild2 {
+                                 GHC.Types.False -> wild `cast` (Sym (Data.Foldable.N:Min[0]) <a>_N)
+                                 GHC.Types.True
+                                 -> (GHC.Base.Just @ a x)
+                                      `cast`
+                                    (Sym (Data.Foldable.N:Min[0]) <a>_N) } })
+                         (GHC.Base.Nothing @ a) `cast` (Sym (Data.Foldable.N:Min[0]) <a>_N)
+                         eta)
+                        `cast`
+                      (Data.Foldable.N:Min[0] <a>_N) of wild {
+                   GHC.Base.Nothing -> Main.$fFoldableTree3 @ a
+                   GHC.Base.Just v -> v }) -}
+06d5af5a0e02487805bce7b4f9204ae8
+  $fFoldableTree_$cnull :: TreePrinters.Tree a -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ @ a ->
+                 Main.$fFoldableTree_$cfoldr
+                   @ a
+                   @ GHC.Types.Bool
+                   (Main.$fFoldableTree6 @ a)
+                   GHC.Types.True) -}
+5d2abc08d47e13ce82eb4de6187046c6
+  $fFoldableTree_$cproduct ::
+    GHC.Num.Num a => TreePrinters.Tree a -> a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(A,A,1*U,A,A,A,1*C1(U))><S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.$fFoldableTree1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Num.Num a>_R
+                 ->_R <TreePrinters.Tree a>_R
+                 ->_R Data.Monoid.N:Product[0] <a>_R) -}
+c4e71e9ebe0e0a509b721436efd4ec2f
+  $fFoldableTree_$csum :: GHC.Num.Num a => TreePrinters.Tree a -> a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(1*U,A,A,A,A,A,1*C1(U))><S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.$fFoldableTree2
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Num.Num a>_R
+                 ->_R <TreePrinters.Tree a>_R
+                 ->_R Data.Monoid.N:Sum[0] <a>_R) -}
+b8114b96294a85d1ca33832c90cf3098
+  $fFoldableTree_$ctoList :: TreePrinters.Tree a -> [a]
+  {- Arity: 1, Strictness: <L,U>, Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ a (t4 :: TreePrinters.Tree a) ->
+                 GHC.Base.build
+                   @ a
+                   (\ @ b (c :: a -> b -> b)[OneShot] (n :: b)[OneShot] ->
+                    Main.$fFoldableTree_$cfoldr @ a @ b c n t4)) -}
+0e002baafbfba41b358b128495e7906a
+  $fMapTree :: Main.Map TreePrinters.Tree
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ TreePrinters.Tree
+                  Main.$fMapTree_$cemptyMap
+                  Main.$fMapTree_$ctoListMap
+                  Main.$fMapTree_$cfindMap
+                  Main.$fMapTree_$cinsertMap
+                  Main.$fMapTree_$cdeleteMap
+                  Main.$fMapTree_$cnextMap
+                  Main.$fMapTree_$cfromListMap -}
+c478c3ca5eea87f510060e4fb5650734
+  $fMapTree2 :: b
+  {- Strictness: x -}
+baee062a9a3ae35185883b916957dc8c
+  $fMapTree3 :: b
+  {- Strictness: x -}
+e2c5a92f5bfd8ce54a1032a080901d65
+  $fMapTree4 :: b
+  {- Strictness: x -}
+bc334c2c7160e19994201ef0a7130767
+  $fMapTree5 ::
+    GHC.Classes.Ord a =>
+    TreePrinters.Tree (Main.Pair a b) -> [Main.Pair a b]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (x :: TreePrinters.Tree (Main.Pair a b)) ->
+                 Main.$fFoldableTree_$cfoldr
+                   @ (Main.Pair a b)
+                   @ [Main.Pair a b]
+                   (GHC.Types.: @ (Main.Pair a b))
+                   (GHC.Types.[] @ (Main.Pair a b))
+                   x) -}
+79ff3343c27835e37198b711e9524ffc
+  $fMapTree_$cdeleteMap ::
+    GHC.Classes.Ord a =>
+    a
+    -> TreePrinters.Tree (Main.Pair a b)
+    -> TreePrinters.Tree (Main.Pair a b)
+  {- Arity: 1, Strictness: <L,U(U(C(C1(U)),A),A,A,C(C1(U)),A,A,A,A)>,
+     Unfolding: (\ @ a @ b ($dOrd :: GHC.Classes.Ord a) ->
+                 let {
+                   $dOrd1 :: GHC.Classes.Ord (Main.Pair a b)
+                   = Main.$fOrdPair @ a @ b $dOrd
+                 } in
+                 \ (x :: a) (eta :: TreePrinters.Tree (Main.Pair a b)) ->
+                 SecondHW.delete
+                   @ (Main.Pair a b)
+                   $dOrd1
+                   (x, Main.$fMapTree3 @ b) `cast` (Sym (Main.N:Pair[0]) <a>_N <b>_N)
+                   eta) -}
+53c2ff2c57abfb3980581b2c6531b654
+  $fMapTree_$cemptyMap ::
+    GHC.Classes.Ord a => TreePrinters.Tree (Main.Pair a b)
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ a @ b ($dOrd :: GHC.Classes.Ord a) ->
+                 TreePrinters.Leaf @ (Main.Pair a b)) -}
+fc72e117bb3d06622f419d5bb58c87d0
+  $fMapTree_$cfindMap ::
+    GHC.Classes.Ord a =>
+    a -> TreePrinters.Tree (Main.Pair a b) -> GHC.Base.Maybe b
+  {- Arity: 1, Strictness: <L,U(U(C(C1(U)),A),A,A,C(C1(U)),A,A,A,A)>,
+     Unfolding: (\ @ a @ b ($dOrd :: GHC.Classes.Ord a) ->
+                 let {
+                   $dOrd1 :: GHC.Classes.Ord (Main.Pair a b)
+                   = Main.$fOrdPair @ a @ b $dOrd
+                 } in
+                 \ (x :: a) (tree :: TreePrinters.Tree (Main.Pair a b)) ->
+                 case SecondHW.find
+                        @ (Main.Pair a b)
+                        $dOrd1
+                        (x, Main.$fMapTree4 @ b) `cast` (Sym (Main.N:Pair[0]) <a>_N <b>_N)
+                        tree of wild {
+                   GHC.Base.Nothing -> GHC.Base.Nothing @ b
+                   GHC.Base.Just ds
+                   -> case ds
+                             `cast`
+                           (Main.N:Pair[0] <a>_N <b>_N) of wild1 { (,) ds1 b1 ->
+                      GHC.Base.Just @ b b1 } }) -}
+a77cfdd420d475cc54f6c293e1f87e43
+  $fMapTree_$cfromListMap ::
+    GHC.Classes.Ord a => [(a, b)] -> TreePrinters.Tree (Main.Pair a b)
+  {- Arity: 1, Strictness: <L,U(U(C(C1(U)),A),A,A,C(C1(U)),A,A,A,A)>,
+     Unfolding: (\ @ a @ b ($dOrd :: GHC.Classes.Ord a) ->
+                 let {
+                   $dOrd1 :: GHC.Classes.Ord (Main.Pair a b)
+                   = Main.$fOrdPair @ a @ b $dOrd
+                 } in
+                 letrec {
+                   go :: [(a, b)] -> TreePrinters.Tree (Main.Pair a b)
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [(a, b)]) ->
+                     case ds of wild {
+                       [] -> TreePrinters.Leaf @ (Main.Pair a b)
+                       : y1 ys
+                       -> case SecondHW.$winsert
+                                 @ (Main.Pair a b)
+                                 $dOrd1
+                                 y1 `cast` (Sym (Main.N:Pair[0]) <a>_N <b>_N)
+                                 (go ys) of ww { (#,,#) ww1 ww2 ww3 ->
+                          TreePrinters.Node @ (Main.Pair a b) ww1 ww2 ww3 } }
+                 } in
+                 \ (x :: [(a, b)]) -> go x) -}
+86ea768e2b5ab4cb69b6bd8b7517cbb2
+  $fMapTree_$cinsertMap ::
+    GHC.Classes.Ord a =>
+    (a, b)
+    -> TreePrinters.Tree (Main.Pair a b)
+    -> TreePrinters.Tree (Main.Pair a b)
+  {- Arity: 1, Strictness: <L,U(U(C(C1(U)),A),A,A,C(C1(U)),A,A,A,A)>,
+     Unfolding: (\ @ a @ b ($dOrd :: GHC.Classes.Ord a) ->
+                 let {
+                   $dOrd1 :: GHC.Classes.Ord (Main.Pair a b)
+                   = Main.$fOrdPair @ a @ b $dOrd
+                 } in
+                 \ (x :: (a, b)) (eta :: TreePrinters.Tree (Main.Pair a b)) ->
+                 case SecondHW.$winsert
+                        @ (Main.Pair a b)
+                        $dOrd1
+                        x `cast` (Sym (Main.N:Pair[0]) <a>_N <b>_N)
+                        eta of ww { (#,,#) ww1 ww2 ww3 ->
+                 TreePrinters.Node @ (Main.Pair a b) ww1 ww2 ww3 }) -}
+6b6a6ded79644f696bfd92721f12fc5b
+  $fMapTree_$cnextMap ::
+    GHC.Classes.Ord a =>
+    a -> TreePrinters.Tree (Main.Pair a b) -> GHC.Base.Maybe (a, b)
+  {- Arity: 1, Strictness: <L,U(U(C(C1(U)),A),A,A,C(C1(U)),A,A,A,A)>,
+     Unfolding: (\ @ a @ b ($dOrd :: GHC.Classes.Ord a) ->
+                 let {
+                   $dOrd1 :: GHC.Classes.Ord (Main.Pair a b)
+                   = Main.$fOrdPair @ a @ b $dOrd
+                 } in
+                 \ (x :: a) (tree :: TreePrinters.Tree (Main.Pair a b)) ->
+                 case Main.findNext
+                        @ (Main.Pair a b)
+                        $dOrd1
+                        (TreePrinters.Leaf @ (Main.Pair a b))
+                        (x, Main.$fMapTree2 @ b) `cast` (Sym (Main.N:Pair[0]) <a>_N <b>_N)
+                        tree of wild {
+                   GHC.Base.Nothing -> GHC.Base.Nothing @ (a, b)
+                   GHC.Base.Just res
+                   -> GHC.Base.Just
+                        @ (a, b)
+                        res `cast` (Main.N:Pair[0] <a>_N <b>_N) }) -}
+87069eadbbb6b51240edf3b66cbdea74
+  $fMapTree_$ctoListMap ::
+    GHC.Classes.Ord a => TreePrinters.Tree (Main.Pair a b) -> [(a, b)]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.$fMapTree5
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N).
+                 <GHC.Classes.Ord a>_R
+                 ->_R <TreePrinters.Tree (Main.Pair a b)>_R
+                 ->_R ([Main.N:Pair[0] <a>_N <b>_N])_R) -}
+7378e9f4f772db652ff4bf1badd43ee8
+  $fMonoidCoin :: GHC.Base.Monoid (Main.Coin color)
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ color.
+                  @ (Main.Coin color)
+                  (Main.$fMonoidCoin_$cmempty @ color)
+                  (Main.$fMonoidCoin_$c+ @ color)
+                  (Main.$fMonoidCoin_$cmconcat @ color) -}
+7378e9f4f772db652ff4bf1badd43ee8
+  $fMonoidCoin1 :: [Main.Coin color] -> GHC.Prim.Int#
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+7378e9f4f772db652ff4bf1badd43ee8
+  $fMonoidCoin2 ::
+    Main.Coin color -> Main.Coin color -> GHC.Types.Int
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S(S),1*U(U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ color (a :: Main.Coin color) (b :: Main.Coin color) ->
+                 case a `cast`
+                      (Main.N:Coin[0] <color>_P) of wild { GHC.Types.I# x ->
+                 case b `cast`
+                      (Main.N:Coin[0] <color>_P) of wild1 { GHC.Types.I# y1 ->
+                 GHC.Types.I# (GHC.Prim.+# x y1) } }) -}
+7378e9f4f772db652ff4bf1badd43ee8
+  $fMonoidCoin_$c+ ::
+    Main.Coin color -> Main.Coin color -> Main.Coin color
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S(S),1*U(U)>m,
+     Unfolding: InlineRule (0, True, True)
+                Main.$fMonoidCoin2
+                  `cast`
+                (forall (color :: <*>_N).
+                 <Main.Coin color>_R
+                 ->_R <Main.Coin color>_R
+                 ->_R Sym (Main.N:Coin[0] <color>_P)) -}
+7378e9f4f772db652ff4bf1badd43ee8
+  $fMonoidCoin_$cmconcat :: [Main.Coin color] -> Main.Coin color
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ color (w :: [Main.Coin color]) ->
+                 case Main.$fMonoidCoin1 @ color w of ww { DEFAULT ->
+                 (GHC.Types.I# ww) `cast` (Sym (Main.N:Coin[0] <color>_P)) }) -}
+7378e9f4f772db652ff4bf1badd43ee8
+  $fMonoidCoin_$cmempty :: Main.Coin color
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                (\ @ color -> Main.$fComparableColorBlue_z0)
+                  `cast`
+                (forall (color :: <*>_N). Sym (Main.N:Coin[0] <color>_P)) -}
+33dde91b79920cb560bf0d1a8026eb5e
+  $fMonoidTree ::
+    GHC.Classes.Ord a => GHC.Base.Monoid (TreePrinters.Tree a)
+  DFunId
+  {- Arity: 1,
+     Strictness: <L,U(U(C(C1(U)),A),A,C(C1(U)),A,C(C1(U)),A,A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a ($dOrd :: GHC.Classes.Ord a).
+                  @ (TreePrinters.Tree a)
+                  (Main.$fMonoidTree_$cmempty @ a $dOrd)
+                  (Main.$fMonoidTree_$cmappend @ a $dOrd)
+                  (Main.$fMonoidTree_$cmconcat @ a $dOrd) -}
+04ad662c555a1b2ed6449391b33b9904
+  $fMonoidTree_$cmappend ::
+    GHC.Classes.Ord a =>
+    TreePrinters.Tree a -> TreePrinters.Tree a -> TreePrinters.Tree a
+  {- Arity: 3,
+     Strictness: <L,U(U(C(C1(U)),A),A,C(C1(U)),A,C(C1(U)),A,A,A)><S,1*U><S,1*U> -}
+326557f4b67826632b5a611ccb8cd6e0
+  $fMonoidTree_$cmconcat ::
+    GHC.Classes.Ord a => [TreePrinters.Tree a] -> TreePrinters.Tree a
+  {- Arity: 2,
+     Strictness: <L,U(U(C(C1(U)),A),A,C(C1(U)),A,C(C1(U)),A,A,A)><S,1*U>,
+     Unfolding: (\ @ a
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (eta :: [TreePrinters.Tree a]) ->
+                 letrec {
+                   go :: [TreePrinters.Tree a] -> TreePrinters.Tree a
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [TreePrinters.Tree a]) ->
+                     case ds of wild {
+                       [] -> TreePrinters.Leaf @ a
+                       : y1 ys -> Main.$fMonoidTree_$cmappend @ a $dOrd y1 (go ys) }
+                 } in
+                 go eta) -}
+de69840ceb7ea33ecd2fd216fd52ca44
+  $fMonoidTree_$cmempty :: GHC.Classes.Ord a => TreePrinters.Tree a
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ a ($dOrd :: GHC.Classes.Ord a) -> TreePrinters.Leaf @ a) -}
+7378e9f4f772db652ff4bf1badd43ee8
+  $fNumCoin :: GHC.Num.Num (Main.Coin color)
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ color.
+                  @ (Main.Coin color)
+                  (Main.$fMonoidCoin_$c+ @ color)
+                  (Main.$fNumCoin_$c- @ color)
+                  (Main.$fNumCoin_$c* @ color)
+                  (Main.$fNumCoin_$cnegate @ color)
+                  (Main.$fNumCoin_$cabs @ color)
+                  (Main.$fNumCoin_$csignum @ color)
+                  (Main.$fNumCoin_$cfromInteger @ color) -}
+a726646491065264dd4912371d1b4809
+  $fNumCoin1 :: GHC.Integer.Type.Integer -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ color (a :: GHC.Integer.Type.Integer) ->
+                 GHC.Num.$fNumInt_$cfromInteger a) -}
+7378e9f4f772db652ff4bf1badd43ee8
+  $fNumCoin2 :: Main.Coin color -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ color (a :: Main.Coin color) ->
+                 case a `cast`
+                      (Main.N:Coin[0] <color>_P) of wild { GHC.Types.I# x ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# x 0#) of wild1 {
+                   GHC.Types.False
+                   -> case x of wild2 {
+                        DEFAULT -> GHC.Num.$fNumInt3 0# -> GHC.Num.$fNumInt2 }
+                   GHC.Types.True -> GHC.Num.$fNumInt1 } }) -}
+7378e9f4f772db652ff4bf1badd43ee8
+  $fNumCoin3 :: Main.Coin color -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ color (a :: Main.Coin color) ->
+                 case a `cast`
+                      (Main.N:Coin[0] <color>_P) of wild { GHC.Types.I# x ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# x 0#) of wild1 {
+                   GHC.Types.False -> GHC.Types.I# (GHC.Prim.negateInt# x)
+                   GHC.Types.True -> wild } }) -}
+7378e9f4f772db652ff4bf1badd43ee8
+  $fNumCoin4 :: Main.Coin color -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ color (a :: Main.Coin color) ->
+                 case a `cast`
+                      (Main.N:Coin[0] <color>_P) of wild { GHC.Types.I# x ->
+                 GHC.Types.I# (GHC.Prim.negateInt# x) }) -}
+7378e9f4f772db652ff4bf1badd43ee8
+  $fNumCoin5 :: Main.Coin color -> Main.Coin color -> GHC.Types.Int
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S(S),1*U(U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ color (a :: Main.Coin color) (b :: Main.Coin color) ->
+                 case a `cast`
+                      (Main.N:Coin[0] <color>_P) of wild { GHC.Types.I# x ->
+                 case b `cast`
+                      (Main.N:Coin[0] <color>_P) of wild1 { GHC.Types.I# y1 ->
+                 GHC.Types.I# (GHC.Prim.*# x y1) } }) -}
+7378e9f4f772db652ff4bf1badd43ee8
+  $fNumCoin_$c* ::
+    Main.Coin color -> Main.Coin color -> Main.Coin color
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S(S),1*U(U)>m,
+     Unfolding: InlineRule (0, True, True)
+                Main.$fNumCoin5
+                  `cast`
+                (forall (color :: <*>_N).
+                 <Main.Coin color>_R
+                 ->_R <Main.Coin color>_R
+                 ->_R Sym (Main.N:Coin[0] <color>_P)) -}
+7378e9f4f772db652ff4bf1badd43ee8
+  $fNumCoin_$c- ::
+    Main.Coin color -> Main.Coin color -> Main.Coin color
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ color (x :: Main.Coin color) (y1 :: Main.Coin color) ->
+                 Main.$fMonoidCoin_$c+
+                   @ color
+                   x
+                   (Main.$fNumCoin_$cnegate @ color y1)) -}
+7378e9f4f772db652ff4bf1badd43ee8
+  $fNumCoin_$cabs :: Main.Coin color -> Main.Coin color
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>m,
+     Unfolding: InlineRule (0, True, True)
+                Main.$fNumCoin3
+                  `cast`
+                (forall (color :: <*>_N).
+                 <Main.Coin color>_R ->_R Sym (Main.N:Coin[0] <color>_P)) -}
+7378e9f4f772db652ff4bf1badd43ee8
+  $fNumCoin_$cfromInteger ::
+    GHC.Integer.Type.Integer -> Main.Coin color
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (0, True, True)
+                Main.$fNumCoin1
+                  `cast`
+                (forall (color :: <*>_N).
+                 <GHC.Integer.Type.Integer>_R
+                 ->_R Sym (Main.N:Coin[0] <color>_P)) -}
+7378e9f4f772db652ff4bf1badd43ee8
+  $fNumCoin_$cnegate :: Main.Coin color -> Main.Coin color
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>m,
+     Unfolding: InlineRule (0, True, True)
+                Main.$fNumCoin4
+                  `cast`
+                (forall (color :: <*>_N).
+                 <Main.Coin color>_R ->_R Sym (Main.N:Coin[0] <color>_P)) -}
+7378e9f4f772db652ff4bf1badd43ee8
+  $fNumCoin_$csignum :: Main.Coin color -> Main.Coin color
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>m,
+     Unfolding: InlineRule (0, True, True)
+                Main.$fNumCoin2
+                  `cast`
+                (forall (color :: <*>_N).
+                 <Main.Coin color>_R ->_R Sym (Main.N:Coin[0] <color>_P)) -}
+4853f4fde1e3a22a9fa9adf407077e2f
+  $fOrdPair :: GHC.Classes.Ord a => GHC.Classes.Ord (Main.Pair a b)
+  DFunId
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(U(C(C1(U)),A),A,A,C(C1(U)),A,A,A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a @ b ($dOrd :: GHC.Classes.Ord a).
+                  @ (Main.Pair a b)
+                  (Main.$fOrdPair_$cp1Ord @ a @ b $dOrd)
+                  (Main.$fOrdPair_$ccompare @ a @ b $dOrd)
+                  (Main.$fOrdPair_$c< @ a @ b $dOrd)
+                  (Main.$fOrdPair_$c<= @ a @ b $dOrd)
+                  (Main.$fOrdPair_$c> @ a @ b $dOrd)
+                  (Main.$fOrdPair_$c>= @ a @ b $dOrd)
+                  (Main.$fOrdPair_$cmax @ a @ b $dOrd)
+                  (Main.$fOrdPair_$cmin @ a @ b $dOrd) -}
+4853f4fde1e3a22a9fa9adf407077e2f
+  $fOrdPair1 :: GHC.Classes.Eq (Main.Pair GHC.Types.Int b)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True) Main.$fEqPair_$s$fEqPair -}
+4853f4fde1e3a22a9fa9adf407077e2f
+  $fOrdPair_$c< ::
+    GHC.Classes.Ord a =>
+    Main.Pair a b -> Main.Pair a b -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S(C(C(S))L)LLLLLLL),U(U(C(C1(U)),A),A,A,C(C1(U)),A,A,A,A)><L,U(U,A)><L,U(U,A)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ b
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (x :: Main.Pair a b)
+                   (y1 :: Main.Pair a b) ->
+                 case Main.$fOrdPair_$ccompare @ a @ b $dOrd x y1 of wild {
+                   DEFAULT -> GHC.Types.False GHC.Types.LT -> GHC.Types.True }) -}
+4853f4fde1e3a22a9fa9adf407077e2f
+  $fOrdPair_$c<= ::
+    GHC.Classes.Ord a =>
+    Main.Pair a b -> Main.Pair a b -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LLLC(C(S))LLLL),1*U(A,A,A,1*C1(C1(U)),A,A,A,A)><L,1*U(1*U,A)><L,1*U(1*U,A)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ b
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (ds :: Main.Pair a b)
+                   (ds1 :: Main.Pair a b) ->
+                 GHC.Classes.<=
+                   @ a
+                   $dOrd
+                   (case ds `cast` (Main.N:Pair[0] <a>_N <b>_N) of wild { (,) x ds2 ->
+                    x })
+                   (case ds1
+                           `cast`
+                         (Main.N:Pair[0] <a>_N <b>_N) of wild { (,) x ds2 ->
+                    x })) -}
+4853f4fde1e3a22a9fa9adf407077e2f
+  $fOrdPair_$c> ::
+    GHC.Classes.Ord a =>
+    Main.Pair a b -> Main.Pair a b -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S(C(C(S))L)LLLLLLL),U(U(C(C1(U)),A),A,A,C(C1(U)),A,A,A,A)><L,U(U,A)><L,U(U,A)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ b
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (x :: Main.Pair a b)
+                   (y1 :: Main.Pair a b) ->
+                 case Main.$fOrdPair_$ccompare @ a @ b $dOrd x y1 of wild {
+                   DEFAULT -> GHC.Types.False GHC.Types.GT -> GHC.Types.True }) -}
+4853f4fde1e3a22a9fa9adf407077e2f
+  $fOrdPair_$c>= ::
+    GHC.Classes.Ord a =>
+    Main.Pair a b -> Main.Pair a b -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S(C(C(S))L)LLLLLLL),U(U(C(C1(U)),A),A,A,C(C1(U)),A,A,A,A)><L,U(U,A)><L,U(U,A)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ b
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (x :: Main.Pair a b)
+                   (y1 :: Main.Pair a b) ->
+                 case Main.$fOrdPair_$ccompare @ a @ b $dOrd x y1 of wild {
+                   DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False }) -}
+4853f4fde1e3a22a9fa9adf407077e2f
+  $fOrdPair_$ccompare ::
+    GHC.Classes.Ord a =>
+    Main.Pair a b -> Main.Pair a b -> GHC.Types.Ordering
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S(C(C(S))L)LLLLLLL),U(1*U(1*C1(C1(U)),A),A,A,1*C1(C1(U)),A,A,A,A)><L,U(U,A)><L,U(U,A)>,
+     Unfolding: (\ @ a
+                   @ b
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (eta :: Main.Pair a b)
+                   (eta1 :: Main.Pair a b) ->
+                 case GHC.Classes.==
+                        @ a
+                        (GHC.Classes.$p1Ord @ a $dOrd)
+                        (case eta
+                                `cast`
+                              (Main.N:Pair[0] <a>_N <b>_N) of wild { (,) x ds1 ->
+                         x })
+                        (case eta1
+                                `cast`
+                              (Main.N:Pair[0] <a>_N <b>_N) of wild { (,) x ds1 ->
+                         x }) of wild {
+                   GHC.Types.False
+                   -> case GHC.Classes.<=
+                             @ a
+                             $dOrd
+                             (case eta
+                                     `cast`
+                                   (Main.N:Pair[0] <a>_N <b>_N) of wild1 { (,) x ds1 ->
+                              x })
+                             (case eta1
+                                     `cast`
+                                   (Main.N:Pair[0] <a>_N <b>_N) of wild1 { (,) x ds1 ->
+                              x }) of wild1 {
+                        GHC.Types.False -> GHC.Types.GT GHC.Types.True -> GHC.Types.LT }
+                   GHC.Types.True -> GHC.Types.EQ }) -}
+4853f4fde1e3a22a9fa9adf407077e2f
+  $fOrdPair_$cmax ::
+    GHC.Classes.Ord a =>
+    Main.Pair a b -> Main.Pair a b -> Main.Pair a b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LLLC(C(S))LLLL),1*U(A,A,A,1*C1(C1(U)),A,A,A,A)><L,U(U,U)><L,U(U,U)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ b
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (x :: Main.Pair a b)
+                   (y1 :: Main.Pair a b) ->
+                 case GHC.Classes.<=
+                        @ a
+                        $dOrd
+                        (case x `cast` (Main.N:Pair[0] <a>_N <b>_N) of wild { (,) x1 ds1 ->
+                         x1 })
+                        (case y1
+                                `cast`
+                              (Main.N:Pair[0] <a>_N <b>_N) of wild { (,) x1 ds1 ->
+                         x1 }) of wild {
+                   GHC.Types.False -> x GHC.Types.True -> y1 }) -}
+4853f4fde1e3a22a9fa9adf407077e2f
+  $fOrdPair_$cmin ::
+    GHC.Classes.Ord a =>
+    Main.Pair a b -> Main.Pair a b -> Main.Pair a b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LLLC(C(S))LLLL),1*U(A,A,A,1*C1(C1(U)),A,A,A,A)><L,U(U,U)><L,U(U,U)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ b
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (x :: Main.Pair a b)
+                   (y1 :: Main.Pair a b) ->
+                 case GHC.Classes.<=
+                        @ a
+                        $dOrd
+                        (case x `cast` (Main.N:Pair[0] <a>_N <b>_N) of wild { (,) x1 ds1 ->
+                         x1 })
+                        (case y1
+                                `cast`
+                              (Main.N:Pair[0] <a>_N <b>_N) of wild { (,) x1 ds1 ->
+                         x1 }) of wild {
+                   GHC.Types.False -> y1 GHC.Types.True -> x }) -}
+4853f4fde1e3a22a9fa9adf407077e2f
+  $fOrdPair_$cp1Ord ::
+    GHC.Classes.Ord a => GHC.Classes.Eq (Main.Pair a b)
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,1*U(1*U(C(C1(U)),A),A,A,A,A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a @ b ($dOrd :: GHC.Classes.Ord a) ->
+                 Main.$fEqPair @ a @ b (GHC.Classes.$p1Ord @ a $dOrd)) -}
+4853f4fde1e3a22a9fa9adf407077e2f
+  $fOrdPair_$s$c< ::
+    Main.Pair GHC.Types.Int b
+    -> Main.Pair GHC.Types.Int b -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)L),1*U(1*U(U),A)><S(S(S)L),1*U(1*U(U),A)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ b
+                   (x :: Main.Pair GHC.Types.Int b)
+                   (y1 :: Main.Pair GHC.Types.Int b) ->
+                 case x `cast`
+                      (Main.N:Pair[0] <GHC.Types.Int>_N <b>_N) of wild { (,) x1 ds1 ->
+                 case y1
+                        `cast`
+                      (Main.N:Pair[0] <GHC.Types.Int>_N <b>_N) of wild1 { (,) x2 ds2 ->
+                 case x1 of wild2 { GHC.Types.I# x3 ->
+                 case x2 of wild3 { GHC.Types.I# y2 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==# x3 y2) of wild4 {
+                   GHC.Types.False
+                   -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.<=# x3 y2)
+                   GHC.Types.True -> GHC.Types.False } } } } }) -}
+4853f4fde1e3a22a9fa9adf407077e2f
+  $fOrdPair_$s$c<= ::
+    Main.Pair GHC.Types.Int b
+    -> Main.Pair GHC.Types.Int b -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)L),1*U(1*U(U),A)><S(S(S)L),1*U(1*U(U),A)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ b
+                   (ds :: Main.Pair GHC.Types.Int b)
+                   (ds1 :: Main.Pair GHC.Types.Int b) ->
+                 case ds
+                        `cast`
+                      (Main.N:Pair[0] <GHC.Types.Int>_N <b>_N) of wild { (,) x ds2 ->
+                 case ds1
+                        `cast`
+                      (Main.N:Pair[0] <GHC.Types.Int>_N <b>_N) of wild1 { (,) x1 ds3 ->
+                 GHC.Classes.leInt x x1 } }) -}
+4853f4fde1e3a22a9fa9adf407077e2f
+  $fOrdPair_$s$c> ::
+    Main.Pair GHC.Types.Int b
+    -> Main.Pair GHC.Types.Int b -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)L),1*U(1*U(U),A)><S(S(S)L),1*U(1*U(U),A)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ b
+                   (x :: Main.Pair GHC.Types.Int b)
+                   (y1 :: Main.Pair GHC.Types.Int b) ->
+                 case x `cast`
+                      (Main.N:Pair[0] <GHC.Types.Int>_N <b>_N) of wild { (,) x1 ds1 ->
+                 case y1
+                        `cast`
+                      (Main.N:Pair[0] <GHC.Types.Int>_N <b>_N) of wild1 { (,) x2 ds2 ->
+                 case x1 of wild2 { GHC.Types.I# x3 ->
+                 case x2 of wild3 { GHC.Types.I# y2 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==# x3 y2) of wild4 {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.<=# x3 y2) of wild5 {
+                        GHC.Types.False -> GHC.Types.True
+                        GHC.Types.True -> GHC.Types.False }
+                   GHC.Types.True -> GHC.Types.False } } } } }) -}
+4853f4fde1e3a22a9fa9adf407077e2f
+  $fOrdPair_$s$c>= ::
+    Main.Pair GHC.Types.Int b
+    -> Main.Pair GHC.Types.Int b -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)L),1*U(1*U(U),A)><S(S(S)L),1*U(1*U(U),A)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ b
+                   (x :: Main.Pair GHC.Types.Int b)
+                   (y1 :: Main.Pair GHC.Types.Int b) ->
+                 case x `cast`
+                      (Main.N:Pair[0] <GHC.Types.Int>_N <b>_N) of wild { (,) x1 ds1 ->
+                 case y1
+                        `cast`
+                      (Main.N:Pair[0] <GHC.Types.Int>_N <b>_N) of wild1 { (,) x2 ds2 ->
+                 case x1 of wild2 { GHC.Types.I# x3 ->
+                 case x2 of wild3 { GHC.Types.I# y2 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==# x3 y2) of wild4 {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.<=# x3 y2) of wild5 {
+                        GHC.Types.False -> GHC.Types.True
+                        GHC.Types.True -> GHC.Types.False }
+                   GHC.Types.True -> GHC.Types.True } } } } }) -}
+4853f4fde1e3a22a9fa9adf407077e2f
+  $fOrdPair_$s$ccompare ::
+    Main.Pair GHC.Types.Int b
+    -> Main.Pair GHC.Types.Int b -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)L),1*U(1*U(U),A)><S(S(S)L),1*U(1*U(U),A)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ b
+                   (eta :: Main.Pair GHC.Types.Int b)
+                   (eta1 :: Main.Pair GHC.Types.Int b) ->
+                 case eta
+                        `cast`
+                      (Main.N:Pair[0] <GHC.Types.Int>_N <b>_N) of wild { (,) x ds1 ->
+                 case eta1
+                        `cast`
+                      (Main.N:Pair[0] <GHC.Types.Int>_N <b>_N) of wild1 { (,) x1 ds2 ->
+                 case x of wild2 { GHC.Types.I# x2 ->
+                 case x1 of wild3 { GHC.Types.I# y1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==# x2 y1) of wild4 {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.<=# x2 y1) of wild5 {
+                        GHC.Types.False -> GHC.Types.GT GHC.Types.True -> GHC.Types.LT }
+                   GHC.Types.True -> GHC.Types.EQ } } } } }) -}
+4853f4fde1e3a22a9fa9adf407077e2f
+  $fOrdPair_$s$cmax ::
+    Main.Pair GHC.Types.Int b
+    -> Main.Pair GHC.Types.Int b -> Main.Pair GHC.Types.Int b
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)L),1*U(U(U),U)><S(S(S)L),1*U(U(U),U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ b
+                   (x :: Main.Pair GHC.Types.Int b)
+                   (y1 :: Main.Pair GHC.Types.Int b) ->
+                 case x `cast`
+                      (Main.N:Pair[0] <GHC.Types.Int>_N <b>_N) of wild { (,) x1 ds1 ->
+                 case y1
+                        `cast`
+                      (Main.N:Pair[0] <GHC.Types.Int>_N <b>_N) of wild1 { (,) x2 ds2 ->
+                 case x1 of wild2 { GHC.Types.I# x3 ->
+                 case x2 of wild3 { GHC.Types.I# y2 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<=# x3 y2) of wild4 {
+                   GHC.Types.False
+                   -> wild `cast` (Sym (Main.N:Pair[0]) <GHC.Types.Int>_N <b>_N)
+                   GHC.Types.True
+                   -> wild1
+                        `cast`
+                      (Sym (Main.N:Pair[0]) <GHC.Types.Int>_N <b>_N) } } } } }) -}
+4853f4fde1e3a22a9fa9adf407077e2f
+  $fOrdPair_$s$cmin ::
+    Main.Pair GHC.Types.Int b
+    -> Main.Pair GHC.Types.Int b -> Main.Pair GHC.Types.Int b
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)L),1*U(U(U),U)><S(S(S)L),1*U(U(U),U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ b
+                   (x :: Main.Pair GHC.Types.Int b)
+                   (y1 :: Main.Pair GHC.Types.Int b) ->
+                 case x `cast`
+                      (Main.N:Pair[0] <GHC.Types.Int>_N <b>_N) of wild { (,) x1 ds1 ->
+                 case y1
+                        `cast`
+                      (Main.N:Pair[0] <GHC.Types.Int>_N <b>_N) of wild1 { (,) x2 ds2 ->
+                 case x1 of wild2 { GHC.Types.I# x3 ->
+                 case x2 of wild3 { GHC.Types.I# y2 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<=# x3 y2) of wild4 {
+                   GHC.Types.False
+                   -> wild1 `cast` (Sym (Main.N:Pair[0]) <GHC.Types.Int>_N <b>_N)
+                   GHC.Types.True
+                   -> wild
+                        `cast`
+                      (Sym (Main.N:Pair[0]) <GHC.Types.Int>_N <b>_N) } } } } }) -}
+4853f4fde1e3a22a9fa9adf407077e2f
+  $fOrdPair_$s$fOrdPair ::
+    GHC.Classes.Ord (Main.Pair GHC.Types.Int b)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ b.
+                  @ (Main.Pair GHC.Types.Int b)
+                  (Main.$fOrdPair1 @ b)
+                  (Main.$fOrdPair_$s$ccompare @ b)
+                  (Main.$fOrdPair_$s$c< @ b)
+                  (Main.$fOrdPair_$s$c<= @ b)
+                  (Main.$fOrdPair_$s$c> @ b)
+                  (Main.$fOrdPair_$s$c>= @ b)
+                  (Main.$fOrdPair_$s$cmax @ b)
+                  (Main.$fOrdPair_$s$cmin @ b) -}
+fc0925f748f2e1d4a373600ecb597fe8
+  $fSetTree :: Main.Set TreePrinters.Tree
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ TreePrinters.Tree
+                  Main.$fSetTree_$cemptySet
+                  Main.$fSetTree_$ctoList
+                  SecondHW.find
+                  SecondHW.insert
+                  SecondHW.delete
+                  Main.$fSetTree_$cnext
+                  Main.$fSetTree_$cfromList -}
+b205b52a1abe6b6363fb037b453cca06
+  $fSetTree1 :: TreePrinters.Tree a -> [a]
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ @ a ->
+                 Main.$fFoldableTree_$cfoldr
+                   @ a
+                   @ [a]
+                   (GHC.Types.: @ a)
+                   (GHC.Types.[] @ a)) -}
+a3ba2561620bdd33e27268c12f43c2ec
+  $fSetTree_$cemptySet :: GHC.Classes.Ord a => TreePrinters.Tree a
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (0, True, True) Main.$fMonoidTree_$cmempty -}
+dc9c7acba6f3f45318210a0a8738473f
+  $fSetTree_$cfromList ::
+    GHC.Classes.Ord a => [a] -> TreePrinters.Tree a
+  {- Arity: 2,
+     Strictness: <L,U(U(C(C1(U)),A),A,C(C1(U)),A,C(C1(U)),A,A,A)><S,1*U>,
+     Unfolding: (\ @ a ($dOrd :: GHC.Classes.Ord a) (eta :: [a]) ->
+                 letrec {
+                   go :: [a] -> TreePrinters.Tree a
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [a]) ->
+                     case ds of wild {
+                       [] -> TreePrinters.Leaf @ a
+                       : y1 ys
+                       -> case SecondHW.$winsert
+                                 @ a
+                                 $dOrd
+                                 y1
+                                 (go ys) of ww { (#,,#) ww1 ww2 ww3 ->
+                          TreePrinters.Node @ a ww1 ww2 ww3 } }
+                 } in
+                 go eta) -}
+226afc002ecebcca82d093b115fa9a3b
+  $fSetTree_$cnext ::
+    GHC.Classes.Ord a => a -> TreePrinters.Tree a -> GHC.Base.Maybe a
+  {- Arity: 3,
+     Strictness: <L,U(U(C(C1(U)),A),A,C(C1(U)),A,C(C1(U)),A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (eta :: a)
+                   (eta1 :: TreePrinters.Tree a) ->
+                 Main.findNext @ a $dOrd (TreePrinters.Leaf @ a) eta eta1) -}
+a87ea627f71bffe9daa6621dfb86ff87
+  $fSetTree_$ctoList ::
+    GHC.Classes.Ord a => TreePrinters.Tree a -> [a]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ a ($dOrd :: GHC.Classes.Ord a) (eta :: TreePrinters.Tree a) ->
+                 Main.$fSetTree1 @ a eta) -}
+7378e9f4f772db652ff4bf1badd43ee8
+  $fShowCoin :: GHC.Show.Show (Main.Coin color)
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ color.
+                  @ (Main.Coin color)
+                  (Main.$fShowCoin_$cshowsPrec @ color)
+                  (Main.$fShowCoin_$cshow @ color)
+                  (Main.$fShowCoin_$cshowList @ color) -}
+7378e9f4f772db652ff4bf1badd43ee8
+  $fShowCoin1 :: Main.Coin color -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ @ color
+                   (w :: Main.Coin color)
+                   (w1 :: GHC.Base.String) ->
+                 Main.$w$cshowsPrec @ color 0# w w1) -}
+5d0bd9e1e1a13589f9faac8a85222fce
+  $fShowCoin2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "}"#) -}
+e98577f2e74c079441ea63629d1e6464
+  $fShowCoin3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "getCoin = "#) -}
+5219530b00ffa884529554f6d33e39de
+  $fShowCoin4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Coin {"#) -}
+7378e9f4f772db652ff4bf1badd43ee8
+  $fShowCoin_$cshow :: Main.Coin color -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ color (x :: Main.Coin color) ->
+                 Main.$fShowCoin_$cshowsPrec
+                   @ color
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+7378e9f4f772db652ff4bf1badd43ee8
+  $fShowCoin_$cshowList :: [Main.Coin color] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ @ color ->
+                 GHC.Show.showList__
+                   @ (Main.Coin color)
+                   (Main.$fShowCoin1 @ color)) -}
+7378e9f4f772db652ff4bf1badd43ee8
+  $fShowCoin_$cshowsPrec ::
+    GHC.Types.Int -> Main.Coin color -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><L,1*U(U)><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ color
+                   (w :: GHC.Types.Int)
+                   (w1 :: Main.Coin color)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Main.$w$cshowsPrec @ color ww1 w1 w2 }) -}
+4853f4fde1e3a22a9fa9adf407077e2f
+  $fShowPair ::
+    (GHC.Show.Show a, GHC.Show.Show b) => GHC.Show.Show (Main.Pair a b)
+  DFunId
+  {- Arity: 2,
+     Strictness: <L,U(C(C1(C1(U))),A,A)><L,U(C(C1(U)),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      @ b
+                      ($dShow :: GHC.Show.Show a)
+                      ($dShow1 :: GHC.Show.Show b).
+                  @ (Main.Pair a b)
+                  (Main.$fShowPair_$cshowsPrec @ a @ b $dShow $dShow1)
+                  (Main.$fShowPair_$cshow @ a @ b $dShow $dShow1)
+                  (Main.$fShowPair_$cshowList @ a @ b $dShow $dShow1) -}
+a9cccfd3005154d2d392bf9385a7ca57
+  $fShowPair1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Pair "#) -}
+129db8e926f3df19294fa105964a159b
+  $fShowPair2 :: [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.shows6
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+4853f4fde1e3a22a9fa9adf407077e2f
+  $fShowPair_$cshow ::
+    (GHC.Show.Show a, GHC.Show.Show b) =>
+    Main.Pair a b -> GHC.Base.String
+  {- Arity: 3,
+     Strictness: <L,1*U(1*C1(C1(C1(U))),A,A)><L,1*U(1*C1(C1(U)),A,A)><L,1*U(U,U)>,
+     Unfolding: (\ @ a
+                   @ b
+                   ($dShow :: GHC.Show.Show a)
+                   ($dShow1 :: GHC.Show.Show b)
+                   (x :: Main.Pair a b) ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   Main.$fShowPair1
+                   (case x `cast` (Main.N:Pair[0] <a>_N <b>_N) of ww { (,) ww1 ww2 ->
+                    GHC.Types.:
+                      @ GHC.Types.Char
+                      GHC.Show.shows9
+                      (GHC.Show.showsPrec
+                         @ a
+                         $dShow
+                         GHC.Show.shows22
+                         ww1
+                         (GHC.Types.:
+                            @ GHC.Types.Char
+                            GHC.Show.shows7
+                            (GHC.Show.$fShow(,)_$sgo
+                               Main.$fShowPair2
+                               (GHC.Show.showsPrec @ b $dShow1 GHC.Show.shows22 ww2)
+                               (GHC.Types.[] @ GHC.Show.ShowS)))) })) -}
+4853f4fde1e3a22a9fa9adf407077e2f
+  $fShowPair_$cshowList ::
+    (GHC.Show.Show a, GHC.Show.Show b) =>
+    [Main.Pair a b] -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,U(C(C1(C1(U))),A,A)><L,U(C(C1(U)),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   @ b
+                   ($dShow :: GHC.Show.Show a)
+                   ($dShow1 :: GHC.Show.Show b)
+                   (eta :: [Main.Pair a b])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Main.Pair a b)
+                   (Main.$fShowPair_$cshowsPrec
+                      @ a
+                      @ b
+                      $dShow
+                      $dShow1
+                      Main.$fComparableColorBlue_z0)
+                   eta
+                   eta1) -}
+4853f4fde1e3a22a9fa9adf407077e2f
+  $fShowPair_$cshowsPrec ::
+    (GHC.Show.Show a, GHC.Show.Show b) =>
+    GHC.Types.Int -> Main.Pair a b -> GHC.Show.ShowS
+  {- Arity: 5,
+     Strictness: <L,1*U(1*C1(C1(C1(U))),A,A)><L,1*U(1*C1(C1(U)),A,A)><S(S),1*U(U)><L,1*U(U,U)><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ a
+                   @ b
+                   (w :: GHC.Show.Show a)
+                   (w1 :: GHC.Show.Show b)
+                   (w2 :: GHC.Types.Int)
+                   (w3 :: Main.Pair a b)
+                   (w4 :: GHC.Base.String) ->
+                 case w2 of ww { GHC.Types.I# ww1 ->
+                 Main.$w$cshowsPrec1 @ a @ b w w1 ww1 w3 w4 }) -}
+ee7ce3f7e1f1844901da6f96ce80759c
+  $tc'C:ComparableColor :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11208304939885170802##
+                   15529099367256112768##
+                   Main.$trModule
+                   Main.$tc'C:ComparableColor1) -}
+14e9bcae89a23783a0de84b73461c4f7
+  $tc'C:ComparableColor1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'C:ComparableColor"#) -}
+334cd0427a19e44af2185047eb2d6948
+  $tc'C:Map :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16403301540901685844##
+                   180388190704312955##
+                   Main.$trModule
+                   Main.$tc'C:Map1) -}
+5372f0f1e6089f0e27289ff2c08350af
+  $tc'C:Map1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'C:Map"#) -}
+2f6f2595411279bc04fb879ab31c1e27
+  $tc'C:Set :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4315792795602989186##
+                   14796455182228335939##
+                   Main.$trModule
+                   Main.$tc'C:Set1) -}
+cf309f68e03a5195c61dae68dbf39c87
+  $tc'C:Set1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'C:Set"#) -}
+8cb05a7e8ca2c29c926a2b6d79d53bfa
+  $tc'Coin :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4446646040197796450##
+                   3540165182467549006##
+                   Main.$trModule
+                   Main.$tc'Coin1) -}
+43dd99739ef246286c06d5894619e269
+  $tc'Coin1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Coin"#) -}
+11c32fde49fbe1e6ceea6e9c64326c57
+  $tc'Pair :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10224448114034803930##
+                   7506890485268976573##
+                   Main.$trModule
+                   Main.$tc'Pair1) -}
+5668b12f6bf0be23795a6244320a2c88
+  $tc'Pair1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Pair"#) -}
+79bfaa641b59827035f5a23115b0eefe
+  $tcBlue :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16986006956594172200##
+                   5920007822300949138##
+                   Main.$trModule
+                   Main.$tcBlue1) -}
+0491c73343354ab1cf4ac4734a1a3403
+  $tcBlue1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Blue"#) -}
+577533be1b6dd4d171d188c5e858d5b1
+  $tcCoin :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8190515062715047314##
+                   4100924050122123001##
+                   Main.$trModule
+                   Main.$tcCoin1) -}
+0ab0745d413e915a7fbd0b90cd8b6948
+  $tcCoin1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Coin"#) -}
+fc65eeb97d37f52d0190a9d3a63bdecb
+  $tcComparableColor :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16906672583085636729##
+                   1841894827281413648##
+                   Main.$trModule
+                   Main.$tcComparableColor1) -}
+06889718310ea2f2a42bdc4181753d31
+  $tcComparableColor1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "ComparableColor"#) -}
+e9f2160f6097eb43ecb0022765fb768f
+  $tcMap :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3698261882651713675##
+                   12537671465010435820##
+                   Main.$trModule
+                   Main.$tcMap1) -}
+fa0cf994489f04932d79d80aa0d22143
+  $tcMap1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Map"#) -}
+dd183de1ca55c9aa5640ddf6be917b2e
+  $tcPair :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3471459928268552927##
+                   330866797192322085##
+                   Main.$trModule
+                   Main.$tcPair1) -}
+69253bd6660ebfd516748bb3646638d4
+  $tcPair1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Pair"#) -}
+2c41085b2317394c783d85a958eceb60
+  $tcRed :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5080256738905221604##
+                   1972084232746921100##
+                   Main.$trModule
+                   Main.$tcRed1) -}
+912a87cd54d8d31ecae4335f68ee2ed6
+  $tcRed1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Red"#) -}
+e4e5213cfc4550fd5ccdd385ce836bfa
+  $tcSet :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13454267272357651147##
+                   5133356208283693544##
+                   Main.$trModule
+                   Main.$tcSet1) -}
+7f1f848951216b87bc00edce39da69d4
+  $tcSet1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Set"#) -}
+d6831ef04cb9301b090dfae6f7bb7ec7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule2 Main.$trModule1) -}
+847d9fc3b8e6f0b424199f36b4999bb2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Main"#) -}
+24ef6042833e75ffd7aa98b83ecca98d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+7378e9f4f772db652ff4bf1badd43ee8
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> Main.Coin color -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 3, Strictness: <S,U><L,1*U(U)><L,U>, Inline: [0],
+     Unfolding: (\ @ color
+                   (ww :: GHC.Prim.Int#)
+                   (w :: Main.Coin color)
+                   (w1 :: GHC.Base.String) ->
+                 let {
+                   p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,1*U> -}
+                   = \ (x :: GHC.Base.String)[OneShot] ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       Main.$fShowCoin4
+                       (GHC.Base.++
+                          @ GHC.Types.Char
+                          Main.$fShowCoin3
+                          (case w `cast`
+                                (Main.N:Coin[0] <color>_P) of ww2 { GHC.Types.I# ww3 ->
+                           case GHC.Show.$wshowSignedInt
+                                  0#
+                                  ww3
+                                  (GHC.Base.++
+                                     @ GHC.Types.Char
+                                     Main.$fShowCoin2
+                                     x) of ww4 { (#,#) ww5 ww6 ->
+                           GHC.Types.: @ GHC.Types.Char ww5 ww6 } }))
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11#) of wild {
+                   GHC.Types.False -> p w1
+                   GHC.Types.True
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows9
+                        (p (GHC.Types.: @ GHC.Types.Char GHC.Show.shows6 w1)) }) -}
+4853f4fde1e3a22a9fa9adf407077e2f
+  $w$cshowsPrec1 ::
+    (GHC.Show.Show a, GHC.Show.Show b) =>
+    GHC.Prim.Int#
+    -> Main.Pair a b -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 5,
+     Strictness: <L,1*U(1*C1(C1(C1(U))),A,A)><L,1*U(1*C1(C1(U)),A,A)><S,U><L,1*U(U,U)><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   @ b
+                   (w :: GHC.Show.Show a)
+                   (w1 :: GHC.Show.Show b)
+                   (ww :: GHC.Prim.Int#)
+                   (w2 :: Main.Pair a b)
+                   (w3 :: GHC.Base.String) ->
+                 let {
+                   p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,U> -}
+                   = \ (x :: GHC.Base.String)[OneShot] ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       Main.$fShowPair1
+                       (case w2
+                               `cast`
+                             (Main.N:Pair[0] <a>_N <b>_N) of ww1 { (,) ww2 ww3 ->
+                        GHC.Types.:
+                          @ GHC.Types.Char
+                          GHC.Show.shows9
+                          (GHC.Show.showsPrec
+                             @ a
+                             w
+                             GHC.Show.shows22
+                             ww2
+                             (GHC.Types.:
+                                @ GHC.Types.Char
+                                GHC.Show.shows7
+                                (GHC.Show.$fShow(,)_$sgo
+                                   (GHC.Types.: @ GHC.Types.Char GHC.Show.shows6 x)
+                                   (GHC.Show.showsPrec @ b w1 GHC.Show.shows22 ww3)
+                                   (GHC.Types.[] @ GHC.Show.ShowS)))) })
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11#) of wild {
+                   GHC.Types.False -> p w3
+                   GHC.Types.True
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows9
+                        (p (GHC.Types.: @ GHC.Types.Char GHC.Show.shows6 w3)) }) -}
+d185fe49c7d872868643ca111d9e9424
+  $wgetNextWithDifferentRight ::
+    TreePrinters.Tree a -> TreePrinters.Tree a -> GHC.Base.Maybe a
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>, Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: TreePrinters.Tree a)
+                   (w1 :: TreePrinters.Tree a) ->
+                 case w of wild {
+                   TreePrinters.Leaf
+                   -> case w1 of wild1 {
+                        TreePrinters.Leaf -> GHC.Base.Nothing @ a
+                        TreePrinters.Node ipv ipv1 ipv2
+                        -> GHC.Base.Just @ a (SecondHW.$wfindMin @ a wild1) }
+                   TreePrinters.Node element ds ds1
+                   -> case w1 of wild1 {
+                        TreePrinters.Leaf -> GHC.Base.Just @ a element
+                        TreePrinters.Node ipv ipv1 ipv2
+                        -> GHC.Base.Just @ a (SecondHW.$wfindMin @ a wild1) } }) -}
+35641c0375e2ee17c618494dcf5971f1
+  data Blue
+7378e9f4f772db652ff4bf1badd43ee8
+  type role Coin phantom
+  newtype Coin color = Coin {getCoin :: GHC.Types.Int}
+82a592b5dcca4db7e396b0545062afb8
+  class ComparableColor a where
+    getColorNumber :: Main.Coin a -> GHC.Types.Int
+    {-# MINIMAL getColorNumber #-}
+0e002baafbfba41b358b128495e7906a
+  class Map (t :: * -> *) where
+    emptyMap :: GHC.Classes.Ord a => t (Main.Pair a b)
+    toListMap :: GHC.Classes.Ord a => t (Main.Pair a b) -> [(a, b)]
+    findMap :: GHC.Classes.Ord a =>
+               a -> t (Main.Pair a b) -> GHC.Base.Maybe b
+    insertMap :: GHC.Classes.Ord a =>
+                 (a, b) -> t (Main.Pair a b) -> t (Main.Pair a b)
+    deleteMap :: GHC.Classes.Ord a =>
+                 a -> t (Main.Pair a b) -> t (Main.Pair a b)
+    nextMap :: GHC.Classes.Ord a =>
+               a -> t (Main.Pair a b) -> GHC.Base.Maybe (a, b)
+    fromListMap :: GHC.Classes.Ord a => [(a, b)] -> t (Main.Pair a b)
+    {-# MINIMAL emptyMap, toListMap, findMap, insertMap, deleteMap,
+                nextMap, fromListMap #-}
+4853f4fde1e3a22a9fa9adf407077e2f
+  newtype Pair a b = Pair (a, b)
+58a5913a5a9d169ca8b3b8f51ad117bd
+  data Red
+fc0925f748f2e1d4a373600ecb597fe8
+  class Set (t :: * -> *) where
+    emptySet :: GHC.Classes.Ord a => t a
+    toList :: GHC.Classes.Ord a => t a -> [a]
+    findSet :: GHC.Classes.Ord a => a -> t a -> GHC.Base.Maybe a
+    insertSet :: GHC.Classes.Ord a => a -> t a -> t a
+    deleteSet :: GHC.Classes.Ord a => a -> t a -> t a
+    next :: GHC.Classes.Ord a => a -> t a -> GHC.Base.Maybe a
+    fromList :: GHC.Classes.Ord a => [a] -> t a
+    {-# MINIMAL emptySet, toList, findSet, insertSet, deleteSet, next,
+                fromList #-}
+c81949002b0ab7335893c7e2fd1bb6b3
+  addToList :: a -> [a] -> [a]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>m2,
+     Unfolding: InlineRule (0, True, True) GHC.Types.: -}
+e56a5a1b6880501a14083d2c4af14b32
+  compareCoins ::
+    (Main.ComparableColor c1, Main.ComparableColor c2) =>
+    Main.Coin c1 -> Main.Coin c2 -> GHC.Types.Ordering
+  {- Arity: 4,
+     Strictness: <C(S(S)),C(U(U))><C(S(S)),C(U(U))><L,U(U)><L,U(U)>,
+     Unfolding: (\ @ c1
+                   @ c2
+                   ($dComparableColor :: Main.ComparableColor c1)
+                   ($dComparableColor1 :: Main.ComparableColor c2)
+                   (c4 :: Main.Coin c1)
+                   (c5 :: Main.Coin c2) ->
+                 case $dComparableColor `cast` (Main.N:ComparableColor[0] <c1>_N)
+                        c4 of wild { GHC.Types.I# x ->
+                 case $dComparableColor1 `cast` (Main.N:ComparableColor[0] <c2>_N)
+                        c5 of wild1 { GHC.Types.I# y1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# x y1) of wild2 {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.># x y1) of wild3 {
+                        GHC.Types.False
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.==# x y1) of wild4 {
+                             GHC.Types.False -> Main.compareCoins1
+                             GHC.Types.True
+                             -> case c4
+                                       `cast`
+                                     (Main.N:Coin[0] <c1>_P) of wild5 { GHC.Types.I# x# ->
+                                case c5
+                                       `cast`
+                                     (Main.N:Coin[0] <c2>_P) of wild6 { GHC.Types.I# y# ->
+                                GHC.Classes.compareInt# x# y# } } }
+                        GHC.Types.True -> GHC.Types.GT }
+                   GHC.Types.True -> GHC.Types.LT } } }) -}
+d1eb107b7ba128de0057dfce92511824
+  compareCoins1 :: GHC.Types.Ordering
+  {- Strictness: x -}
+ebd622f5940369b3c9241db5e4d22afe
+  convertToStandardPair :: Main.Pair a b -> (a, b)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U)>m,
+     Unfolding: InlineRule (0, True, True)
+                Main.convertToStandardPair1
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N).
+                 <Main.Pair a b>_R ->_R Main.N:Pair[0] <a>_N <b>_N) -}
+2c43a7e57e4e7740d3edbb1fad497ac9
+  convertToStandardPair1 :: Main.Pair a b -> Main.Pair a b
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U)>m,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ a @ b (ds :: Main.Pair a b) -> ds) -}
+c0897cdd35fa06d2815a6d21ae24848d
+  findNext ::
+    GHC.Classes.Ord a =>
+    TreePrinters.Tree a -> a -> TreePrinters.Tree a -> GHC.Base.Maybe a
+  {- Arity: 4,
+     Strictness: <L,U(U(C(C1(U)),A),A,C(C1(U)),A,C(C1(U)),A,A,A)><L,1*U><L,U><S,1*U> -}
+06bb61b813676734ddcd635d6d57450c
+  getCoin :: Main.Coin color -> GHC.Types.Int
+  RecSel Left Main.Coin
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U)>m,
+     Unfolding: InlineRule (0, True, True)
+                Main.getCoin1
+                  `cast`
+                (forall (color :: <*>_N).
+                 <Main.Coin color>_R ->_R Main.N:Coin[0] <color>_P) -}
+ac793a0c1690bb988922a631d222f295
+  getCoin1 :: Main.Coin color -> Main.Coin color
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U)>m,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ color (ds :: Main.Coin color) -> ds) -}
+4a7ae2419615af9858dd3008100fab6a
+  getNext ::
+    GHC.Classes.Ord a => TreePrinters.Tree a -> GHC.Base.Maybe a
+  {- Arity: 2, Strictness: <L,A><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a ($dOrd :: GHC.Classes.Ord a) (ds :: TreePrinters.Tree a) ->
+                 case ds of wild {
+                   TreePrinters.Leaf -> GHC.Base.Nothing @ a
+                   TreePrinters.Node ipv ipv1 ipv2
+                   -> GHC.Base.Just @ a (SecondHW.$wfindMin @ a wild) }) -}
+09b23fa14c5d66ac994c2d56c0eb4f78
+  getNextWithDifferentRight ::
+    GHC.Classes.Ord a =>
+    TreePrinters.Tree a -> TreePrinters.Tree a -> GHC.Base.Maybe a
+  {- Arity: 3, Strictness: <L,A><S,1*U><S,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, True)
+                (\ @ a
+                   (w :: GHC.Classes.Ord a)
+                   (w1 :: TreePrinters.Tree a)
+                   (w2 :: TreePrinters.Tree a) ->
+                 Main.$wgetNextWithDifferentRight @ a w1 w2) -}
+029b6365df0d88571104274d61fb128a
+  main :: GHC.Types.IO ()
+  {- Strictness: x -}
+79a6bcf63a73f1b5df2b8d801a3f09ab
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1 @ () Main.main) -}
+8424400433158441bf18ad8c9d7c3622
+  t :: TreePrinters.Tree (Main.Pair GHC.Types.Int GHC.Types.Int)
+  {- Unfolding: (case SecondHW.$winsert
+                        @ (Main.Pair GHC.Types.Int GHC.Types.Int)
+                        (Main.$fOrdPair_$s$fOrdPair @ GHC.Types.Int)
+                        Main.t1
+                          `cast`
+                        (Sym (Main.N:Pair[0]) <GHC.Types.Int>_N <GHC.Types.Int>_N)
+                        (TreePrinters.Leaf
+                           @ (Main.Pair
+                                GHC.Types.Int GHC.Types.Int)) of ww { (#,,#) ww1 ww2 ww3 ->
+                 TreePrinters.Node
+                   @ (Main.Pair GHC.Types.Int GHC.Types.Int)
+                   ww1
+                   ww2
+                   ww3 }) -}
+210e28ba1991af02e2182ec62e2cc575
+  t1 :: (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs, Unfolding: ((Main.t3, Main.t2)) -}
+50aae4e5ae13285789ff313bb57b7166
+  t2 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 20#) -}
+2374b0f34627d11c275718092c7b9966
+  t3 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 10#) -}
+d48d1792fdb3162d7345e3095fd8ca91
+  y :: TreePrinters.Tree (Main.Pair GHC.Types.Int GHC.Types.Int)
+  {- HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True)
+                (TreePrinters.Leaf @ (Main.Pair GHC.Types.Int GHC.Types.Int)) -}
+1303dc8dbfdbb496e9c4a0b9d28e0c1e
+  z :: TreePrinters.Tree (Main.Pair GHC.Types.Int GHC.Types.Int)
+  {- Unfolding: (case SecondHW.$winsert
+                        @ (Main.Pair GHC.Types.Int GHC.Types.Int)
+                        (Main.$fOrdPair_$s$fOrdPair @ GHC.Types.Int)
+                        Main.z11
+                          `cast`
+                        (Sym (Main.N:Pair[0]) <GHC.Types.Int>_N <GHC.Types.Int>_N)
+                        (TreePrinters.Leaf
+                           @ (Main.Pair
+                                GHC.Types.Int GHC.Types.Int)) of ww { (#,,#) ww1 ww2 ww3 ->
+                 case SecondHW.$winsert
+                        @ (Main.Pair GHC.Types.Int GHC.Types.Int)
+                        (Main.$fOrdPair_$s$fOrdPair @ GHC.Types.Int)
+                        Main.z9
+                          `cast`
+                        (Sym (Main.N:Pair[0]) <GHC.Types.Int>_N <GHC.Types.Int>_N)
+                        (TreePrinters.Node
+                           @ (Main.Pair GHC.Types.Int GHC.Types.Int)
+                           ww1
+                           ww2
+                           ww3) of ww4 { (#,,#) ww5 ww6 ww7 ->
+                 case SecondHW.$winsert
+                        @ (Main.Pair GHC.Types.Int GHC.Types.Int)
+                        (Main.$fOrdPair_$s$fOrdPair @ GHC.Types.Int)
+                        Main.z8
+                          `cast`
+                        (Sym (Main.N:Pair[0]) <GHC.Types.Int>_N <GHC.Types.Int>_N)
+                        (TreePrinters.Node
+                           @ (Main.Pair GHC.Types.Int GHC.Types.Int)
+                           ww5
+                           ww6
+                           ww7) of ww8 { (#,,#) ww9 ww10 ww11 ->
+                 case SecondHW.$winsert
+                        @ (Main.Pair GHC.Types.Int GHC.Types.Int)
+                        (Main.$fOrdPair_$s$fOrdPair @ GHC.Types.Int)
+                        Main.z6
+                          `cast`
+                        (Sym (Main.N:Pair[0]) <GHC.Types.Int>_N <GHC.Types.Int>_N)
+                        (TreePrinters.Node
+                           @ (Main.Pair GHC.Types.Int GHC.Types.Int)
+                           ww9
+                           ww10
+                           ww11) of ww12 { (#,,#) ww13 ww14 ww15 ->
+                 case SecondHW.$winsert
+                        @ (Main.Pair GHC.Types.Int GHC.Types.Int)
+                        (Main.$fOrdPair_$s$fOrdPair @ GHC.Types.Int)
+                        Main.z3
+                          `cast`
+                        (Sym (Main.N:Pair[0]) <GHC.Types.Int>_N <GHC.Types.Int>_N)
+                        (TreePrinters.Node
+                           @ (Main.Pair GHC.Types.Int GHC.Types.Int)
+                           ww13
+                           ww14
+                           ww15) of ww16 { (#,,#) ww17 ww18 ww19 ->
+                 case SecondHW.$winsert
+                        @ (Main.Pair GHC.Types.Int GHC.Types.Int)
+                        (Main.$fOrdPair_$s$fOrdPair @ GHC.Types.Int)
+                        Main.z1
+                          `cast`
+                        (Sym (Main.N:Pair[0]) <GHC.Types.Int>_N <GHC.Types.Int>_N)
+                        (TreePrinters.Node
+                           @ (Main.Pair GHC.Types.Int GHC.Types.Int)
+                           ww17
+                           ww18
+                           ww19) of ww20 { (#,,#) ww21 ww22 ww23 ->
+                 TreePrinters.Node
+                   @ (Main.Pair GHC.Types.Int GHC.Types.Int)
+                   ww21
+                   ww22
+                   ww23 } } } } } }) -}
+399204f2eb0288a0574bcfdec7531ad2
+  z1 :: (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs,
+     Unfolding: ((Main.$fComparableColorRed1, Main.z2)) -}
+765d2da65c7404efd1251a4f93ad14fb
+  z10 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 8#) -}
+8e564130725a1406544b1bdf39826e0f
+  z11 :: (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs,
+     Unfolding: ((Main.z12, Main.$fComparableColorBlue_z0)) -}
+26134d8fa861a3d4cfde0b17719a9916
+  z12 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 11#) -}
+be70fb71896072258833c464ebf7170c
+  z2 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 4#) -}
+04dd1ee074ee0ea5f126a81c4b2a536a
+  z3 :: (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs, Unfolding: ((Main.z5, Main.z4)) -}
+6f54901b955b70f6a48a8e28dc255255
+  z4 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 5#) -}
+ce49cb67a39aaa778b162de9012d9aa5
+  z5 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 3#) -}
+3758bf79d22758a8223831fc4819139d
+  z6 :: (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs,
+     Unfolding: ((Main.$fComparableColorRed1, Main.z7)) -}
+9659ca1c6ca1610de84953a7d233dfbc
+  z7 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 2#) -}
+4d105e1c47be68a0e55e4aa6e79113e6
+  z8 :: (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs,
+     Unfolding: ((Main.$fComparableColorRed1, Main.z5)) -}
+05d4b9ef288dd30b14c587bc3d81a1a5
+  z9 :: (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs, Unfolding: ((Main.z2, Main.z10)) -}
+instance [safe] Main.ComparableColor [Main.Blue]
+  = Main.$fComparableColorBlue
+instance [safe] Main.ComparableColor [Main.Red]
+  = Main.$fComparableColorRed
+instance [safe] GHC.Classes.Eq [Main.Pair] = Main.$fEqPair
+instance [safe] Data.Foldable.Foldable [TreePrinters.Tree]
+  = Main.$fFoldableTree
+instance [safe] Main.Map [TreePrinters.Tree] = Main.$fMapTree
+instance [safe] GHC.Base.Monoid [Main.Coin] = Main.$fMonoidCoin
+instance [safe] GHC.Base.Monoid [TreePrinters.Tree]
+  = Main.$fMonoidTree
+instance [safe] GHC.Num.Num [Main.Coin] = Main.$fNumCoin
+instance [safe] GHC.Classes.Ord [Main.Pair] = Main.$fOrdPair
+instance [safe] Main.Set [TreePrinters.Tree] = Main.$fSetTree
+instance [safe] GHC.Show.Show [Main.Coin] = Main.$fShowCoin
+instance [safe] GHC.Show.Show [Main.Pair] = Main.$fShowPair
+"SPEC $c/= @ Int _" [ALWAYS] forall @ b
+                                    ($dEq :: GHC.Classes.Eq GHC.Types.Int)
+  Main.$fEqPair_$c/= @ GHC.Types.Int @ b $dEq
+  = Main.$fEqPair_$s$c/= @ b
+"SPEC $c< @ Int _" [ALWAYS] forall @ b
+                                   ($dOrd :: GHC.Classes.Ord GHC.Types.Int)
+  Main.$fOrdPair_$c< @ GHC.Types.Int @ b $dOrd
+  = Main.$fOrdPair_$s$c< @ b
+"SPEC $c<= @ Int _" [ALWAYS] forall @ b
+                                    ($dOrd :: GHC.Classes.Ord GHC.Types.Int)
+  Main.$fOrdPair_$c<= @ GHC.Types.Int @ b $dOrd
+  = Main.$fOrdPair_$s$c<= @ b
+"SPEC $c== @ Int _" [ALWAYS] forall @ b
+                                    ($dEq :: GHC.Classes.Eq GHC.Types.Int)
+  Main.$fEqPair_$c== @ GHC.Types.Int @ b $dEq
+  = Main.$fEqPair_$s$c== @ b
+"SPEC $c> @ Int _" [ALWAYS] forall @ b
+                                   ($dOrd :: GHC.Classes.Ord GHC.Types.Int)
+  Main.$fOrdPair_$c> @ GHC.Types.Int @ b $dOrd
+  = Main.$fOrdPair_$s$c> @ b
+"SPEC $c>= @ Int _" [ALWAYS] forall @ b
+                                    ($dOrd :: GHC.Classes.Ord GHC.Types.Int)
+  Main.$fOrdPair_$c>= @ GHC.Types.Int @ b $dOrd
+  = Main.$fOrdPair_$s$c>= @ b
+"SPEC $ccompare @ Int _" [ALWAYS] forall @ b
+                                         ($dOrd :: GHC.Classes.Ord GHC.Types.Int)
+  Main.$fOrdPair_$ccompare @ GHC.Types.Int @ b $dOrd
+  = Main.$fOrdPair_$s$ccompare @ b
+"SPEC $cmax @ Int _" [ALWAYS] forall @ b
+                                     ($dOrd :: GHC.Classes.Ord GHC.Types.Int)
+  Main.$fOrdPair_$cmax @ GHC.Types.Int @ b $dOrd
+  = Main.$fOrdPair_$s$cmax @ b
+"SPEC $cmin @ Int _" [ALWAYS] forall @ b
+                                     ($dOrd :: GHC.Classes.Ord GHC.Types.Int)
+  Main.$fOrdPair_$cmin @ GHC.Types.Int @ b $dOrd
+  = Main.$fOrdPair_$s$cmin @ b
+"SPEC $cp1Ord @ Int _" [ALWAYS] forall @ b
+                                       ($dOrd :: GHC.Classes.Ord GHC.Types.Int)
+  Main.$fOrdPair_$cp1Ord @ GHC.Types.Int @ b $dOrd
+  = Main.$fOrdPair1 @ b
+"SPEC $fEqPair @ Int _" [ALWAYS] forall @ b
+                                        ($dEq :: GHC.Classes.Eq GHC.Types.Int)
+  Main.$fEqPair @ GHC.Types.Int @ b $dEq
+  = Main.$fEqPair_$s$fEqPair @ b
+"SPEC $fOrdPair @ Int _" [ALWAYS] forall @ b
+                                         ($dOrd :: GHC.Classes.Ord GHC.Types.Int)
+  Main.$fOrdPair @ GHC.Types.Int @ b $dOrd
+  = Main.$fOrdPair_$s$fOrdPair @ b
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

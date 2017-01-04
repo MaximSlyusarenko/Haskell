@@ -1,0 +1,375 @@
+
+==================== FINAL INTERFACE ====================
+2016-11-07 13:52:41.727447 UTC
+
+interface main@main:Main 8001
+  interface hash: 13263f669bc8d2997fae4a9656431e36
+  ABI hash: 88abb8d2769c7071d9b4e6426774143e
+  export-list hash: 4cbdca0a9e8591a14d0caaacfea1b06e
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b7880f1db543b419b690b033b70f101e
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+  Main.safeHead
+  Main.simpleSafeHead
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:Data.Foldable 8aeb682f6c74f97fcf0ace0d608a43ea
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.List 13d2451194c1c6e53b4f4f07947736dd
+import  -/  base-4.9.0.0:GHC.Show 952347a6ab730bcb25c0854d8bc6ca51
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  base-4.9.0.0:System.IO ad985d7a3fc986e9b9c610fb344d9106
+import  -/  ghc-prim-0.5.0.0:GHC.Types 7378e41b7749213c8c88ceb6b0665d4c
+d6831ef04cb9301b090dfae6f7bb7ec7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule2 Main.$trModule1) -}
+847d9fc3b8e6f0b424199f36b4999bb2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Main"#) -}
+24ef6042833e75ffd7aa98b83ecca98d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+f5605c207e9c34bfde70a2f0e3f7c0af
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+970acb5ce6da73426494446d7545b609
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main44
+                        GHC.Types.True
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main36
+                        GHC.Types.True
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main32
+                        GHC.Types.True
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main30
+                        GHC.Types.True
+                        ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main22
+                        GHC.Types.True
+                        ipv6 of ds5 { (#,#) ipv8 ipv9 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main12
+                        GHC.Types.True
+                        ipv8 of ds6 { (#,#) ipv10 ipv11 ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   Main.main2
+                   GHC.Types.True
+                   ipv10 } } } } } }) -}
+a3d41292f610e5e477a9333b65f68ec5
+  main10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.shows19
+                   Main.main11) -}
+f9ce9530e7355535423ac70b9f11a6b0
+  main11 :: GHC.Base.String
+  {- Unfolding: (GHC.Show.$wshowLitChar 'a'# Main.main8) -}
+c9bdffb801798eb9137683a31edf3c40
+  main12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "Test 5: "#
+                   Main.main13) -}
+313519f5b283d564eb921e7f89f47e27
+  main13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "[\"a\", \"b\", \"c\"], expected: "#
+                   Main.main14) -}
+7459444d90415f1a3d719145fb5b2661
+  main14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   GHC.Show.$fShowMaybe1
+                   Main.main15) -}
+6a18ed38ee341cb4f2059ef8a6ee509b
+  main15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Main.main18
+                   Main.main16) -}
+1a7679982f8eec043f49fe79d48e5a1e
+  main16 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   ", actual: "#
+                   Main.main17) -}
+1ea7b8db098f5431c4b4673775948540
+  main17 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   GHC.Show.$fShowMaybe1
+                   Main.main18) -}
+17e3f5569ae11a72d0fd80ea564e7b27
+  main18 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.shows8
+                   Main.main19) -}
+ee68366691a8ef99a4d1e8706ad7784a
+  main19 :: GHC.Base.String
+  {- Unfolding: (GHC.Show.showLitString Main.main21 Main.main20) -}
+11745057fcaa4e9c50772ed6afe23f1c
+  main2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "Test 6: "#
+                   Main.main3) -}
+fb87f01217e4c1de3d762928561a7c67
+  main20 :: [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.shows8
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+3f90a8ffcc7f9296dc176ea20944f5b4
+  main21 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "a"#) -}
+901847a1c25e398f148029f3055e2717
+  main22 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "Test 4: "#
+                   Main.main23) -}
+daa57dc007a18736180f693170d5fd2b
+  main23 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "[7, 5, 8], expected: "#
+                   Main.main24) -}
+36673ae9ba95ac488dc49a47ba444b38
+  main24 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   GHC.Show.$fShowMaybe1
+                   Main.main25) -}
+a543cc1d4d7548ba42f0bde3e6e201ad
+  main25 :: [GHC.Types.Char]
+  {- Unfolding: (case GHC.Show.$w$cshowsPrec3
+                        11#
+                        Main.main29
+                        (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   (GHC.Types.: @ GHC.Types.Char ww3 ww4)
+                   Main.main26 }) -}
+5cfe9ca86fb42e2fe25613c99a52ff9e
+  main26 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   ", actual: "#
+                   Main.main27) -}
+0ead6b9be7088c26a7f16ecb7afc3afd
+  main27 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   GHC.Show.$fShowMaybe1
+                   Main.main28) -}
+5a3b09c9f5fca334b59aa652d7a70b90
+  main28 :: [GHC.Types.Char]
+  {- Unfolding: (case GHC.Show.$w$cshowsPrec3
+                        11#
+                        Main.main29
+                        (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
+                 GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
+96aa2e1cf34d20dc80d12e8756b168e0
+  main29 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (7) -}
+5a5d367832239ca18d54f2a20aa3b395
+  main3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "\"abc\", expected: "#
+                   Main.main4) -}
+488f50a45117138e104d4ea4826f912b
+  main30 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "Test 3: "#
+                   Main.main31) -}
+c173edf11fa314df4aee63dd7c7a7dfe
+  main31 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "[7], expected: "#
+                   Main.main24) -}
+72e0dad6b24de6a3c86f882d56e61774
+  main32 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "Test 2: "#
+                   Main.main33) -}
+44b903f5055f7bd32d01cdaa99fde971
+  main33 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "[] :: [Bool], expected: "#
+                   Main.main34) -}
+46d0bf8cf4699d1643bf2a1c2ca02ef0
+  main34 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   GHC.Show.$fShowMaybe3
+                   Main.main35) -}
+dab8a0e6552cd993fea46176e4944894
+  main35 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   ", actual: "#
+                   GHC.Show.$fShowMaybe3) -}
+b3ce33bea07303ce3097ff17b3ebe1dc
+  main36 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "Test 1: "#
+                   Main.main37) -}
+6792bf6900e88fe31b879d8edaf83abb
+  main37 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "[1, 3, 6], expected: "#
+                   Main.main38) -}
+f47d0d3d85a6cb9236fc19993901530f
+  main38 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   GHC.Show.$fShowMaybe1
+                   Main.main39) -}
+47c493fbe4eb733d879b7087b176a80a
+  main39 :: [GHC.Types.Char]
+  {- Unfolding: (case GHC.Show.$w$cshowsPrec3
+                        11#
+                        Main.main43
+                        (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   (GHC.Types.: @ GHC.Types.Char ww3 ww4)
+                   Main.main40 }) -}
+cc021c78bf1605f20c993e1affd62d9e
+  main4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   GHC.Show.$fShowMaybe1
+                   Main.main5) -}
+7ee19ea7a4b176a443d1866f815f6984
+  main40 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   ", actual: "#
+                   Main.main41) -}
+c0e9689859cc27fcdf80c0beebc647ba
+  main41 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   GHC.Show.$fShowMaybe1
+                   Main.main42) -}
+f73adfe1d84ee93bda7b24a4296b932a
+  main42 :: [GHC.Types.Char]
+  {- Unfolding: (case GHC.Show.$w$cshowsPrec3
+                        11#
+                        Main.main43
+                        (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
+                 GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
+26fe6bf7599477769c0a10e42b34d216
+  main43 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+1d95ce028901a39f3ff7999da8c39b70
+  main44 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Running tests"#) -}
+2bf166665fcd19ee2a97335ed1bb4056
+  main45 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+db351c432cbfc00cdfb1f24171f2ad88
+  main5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Main.main10
+                   Main.main6) -}
+b368ec91217f02d08adec003ee6c16e5
+  main6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   ", actual: "#
+                   Main.main7) -}
+65df6cf6a1253616f96ae056b86cb34f
+  main7 :: [GHC.Types.Char]
+  {- Unfolding: (case GHC.CString.unpackFoldrCString#
+                        @ (GHC.Base.Maybe GHC.Types.Char)
+                        "abc"#
+                        (Main.main9 @ GHC.Types.Char)
+                        (GHC.Base.Nothing @ GHC.Types.Char) of wild {
+                   GHC.Base.Nothing -> GHC.Show.$fShowMaybe3
+                   GHC.Base.Just b1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        GHC.Show.$fShowMaybe1
+                        (case b1 of ww { GHC.Types.C# ww1 ->
+                         case ww1 of ds {
+                           DEFAULT
+                           -> GHC.Types.:
+                                @ GHC.Types.Char
+                                GHC.Show.shows19
+                                (GHC.Show.$wshowLitChar ds Main.main8)
+                           '\''#
+                           -> GHC.Base.++
+                                @ GHC.Types.Char
+                                GHC.Show.shows18
+                                (GHC.Types.[] @ GHC.Types.Char) } }) }) -}
+11ca980f6c817a31e6f6be02080e0b3c
+  main8 :: [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.shows19
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+eb4dddf01572088487cda3bacfca52e2
+  main9 :: a -> GHC.Base.Maybe a -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,A>m2,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a (x :: a) (ds :: GHC.Base.Maybe a)[OneShot] ->
+                 GHC.Base.Just @ a x) -}
+4cc4ae1c129ea99911afff7ce927e559
+  safeHead :: GHC.Show.Show a => [a] -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a ($dShow :: GHC.Show.Show a) (list :: [a]) ->
+                 case list of wild {
+                   [] -> GHC.Base.Nothing @ a : y ys -> GHC.Base.Just @ a y }) -}
+61a3050cca166fc719b69ca9c2b17ffa
+  simpleSafeHead :: GHC.Show.Show a => [a] -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a ($dShow :: GHC.Show.Show a) (ds :: [a]) ->
+                 case ds of wild {
+                   [] -> GHC.Base.Nothing @ a
+                   : ipv ipv1 -> GHC.Base.Just @ a ipv }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
